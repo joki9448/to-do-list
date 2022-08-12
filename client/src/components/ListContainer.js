@@ -7,8 +7,8 @@ function ListContainer() {
 
     return (
         <div className="list-container">
-            <ListItem />
             <Form />
+            <ListItem />
         </div>
     )
 }
