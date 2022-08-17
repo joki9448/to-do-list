@@ -5,8 +5,14 @@ class SessionsController < ApplicationController
   #   render json: { session: session, cookies: cookies.to_hash}
   # end
   def create
-    user = User.find_by(username: params[:username])
+    user = User.find_by(user_params)
     session[:user_id] = user.id 
     render json: user
+  end
+
+  private
+
+  def user_params 
+    params.permit(:username, :password)
   end
 end

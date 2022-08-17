@@ -1,21 +1,28 @@
 import { useState } from 'react';
 
-function LoginForm() {
+function LoginForm({ setLoggedInUser }) {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        let req = await fetch('/users', {
-            method: "POST",
-            headers: {"Content-Type": "application/json"},
-            body: JSON.stringify({ 
-                "username": username,
-                "password": password,
-             })
-        })
-        let res = await req.JSON();
-        console.log('res', res)
+        try {
+            let req = await fetch('/login', {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    "username": username,
+                    "password": password
+                })
+            })
+            let res = await req.json()
+            setLoggedInUser(res);
+            console.log('res', res)
+        }   catch (error) {
+            alert(error.message)
+        }
     }
 
     return (

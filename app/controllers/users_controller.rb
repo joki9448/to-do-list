@@ -5,13 +5,13 @@ class UsersController < ApplicationController
     end
 
     def create
-        user = User.create!(user_params)
+        user = User.create!(new_user_params)
         render json: user, status: 201
     end
 
     private
 
-    def user_params
+    def new_user_params
         params.permit(:username, :password)
     end
 end
