@@ -3,10 +3,17 @@ body {
   justify-content: center;
 }
 
-.list-container {
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* .list-container {
   display: flex;
   justify-content: center;
   height: 100vh;
   width: 75vw;
   background-color: red;
-}
+} */
+
