@@ -1,5 +1,7 @@
 import { useState } from 'react';
 
+import SignUpForm from './SignUpForm';
+
 function LoginForm({ onLogin }) {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
@@ -42,6 +44,7 @@ function LoginForm({ onLogin }) {
                 placeholder="Enter password"
             />
             <button className="login-btn" type="submit">Login</button>
+            <button className="login-btn" onClick={() => alert('hi')}>Sign Up</button>
         </form>
     )
 };
