@@ -5,5 +5,5 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
-u1 = User.create!(username: "username", password: "123", password_confirmation: "123")
+u1 = User.create!(username: "username", password: "123")
 t1 = Task.create!(task: "Get this done", user_id: u1.id)

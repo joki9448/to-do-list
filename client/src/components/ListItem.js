@@ -1,7 +1,6 @@
 function ListItem() {
     return (
         <div>
-            Hello World
         </div>
     )
 }

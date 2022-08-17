@@ -1,12 +1,21 @@
-body {
-  display: grid;
+/* body {
+  display: flex;
   justify-content: center;
-}
+} */
 
 .login-form {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  margin-top: 15%;
+}
+.login-form input {
+  margin: 3px;
+}
+.login-btn {
+  margin-top: 5px;
+  width: 70px;
 }
 
 /* .list-container {
