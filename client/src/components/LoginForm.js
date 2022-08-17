@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-function LoginForm({ setLoggedInUser }) {
+function LoginForm({ onLogin }) {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
 
@@ -18,8 +18,8 @@ function LoginForm({ setLoggedInUser }) {
                 })
             })
             let res = await req.json()
-            if (req.status === 201) {
-                setLoggedInUser(res.username)
+            if (req.ok) {
+                onLogin(res.username)
             }
             // console.log('res from loginForm', res)
         }   catch (error) {

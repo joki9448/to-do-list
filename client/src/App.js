@@ -20,10 +20,11 @@ function App() {
   }
   useEffect(() => fetchUser, [])
 
+
   if (loggedInUser) {
-    return <ListContainer />
+    return <ListContainer onLogout={setLoggedInUser}/>
   } else {
-    return <LoginForm setLoggedInUser={setLoggedInUser}/>
+    return <LoginForm onLogin={setLoggedInUser}/>
   }
   
 }
