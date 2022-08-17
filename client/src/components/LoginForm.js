@@ -18,8 +18,10 @@ function LoginForm({ setLoggedInUser }) {
                 })
             })
             let res = await req.json()
-            setLoggedInUser(res);
-            console.log('res', res)
+            if (req.status === 201) {
+                setLoggedInUser(res.username)
+            }
+            // console.log('res from loginForm', res)
         }   catch (error) {
             alert(error.message)
         }

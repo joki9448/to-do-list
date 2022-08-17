@@ -1,7 +1,13 @@
 class UsersController < ApplicationController
+    skip_before_action :authorize, only: :create
 
-    def index 
-        render json: User.all, status: 200
+    def show
+        user = User.find_by(id: params[:user_id])
+        if user 
+            render json: user 
+        else 
+            render json: { error: "Not authorized" }, status: 401
+        end
     end
 
     def create

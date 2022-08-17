@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  # get 'sessions', to: "sessions#index"
   resources :tasks, :users
-  post "login", to: "sessions#create"
+
+  post "/login", to: "sessions#create"
+  get "/me", to: "users#show"
 end
