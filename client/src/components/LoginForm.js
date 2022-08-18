@@ -16,7 +16,7 @@ function LoginForm({ onLogin }) {
                 },
                 body: JSON.stringify({
                     "username": username,
-                    "password": password
+                    "password_digest": password
                 })
             })
             let res = await req.json()
