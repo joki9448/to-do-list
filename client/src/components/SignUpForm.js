@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-function SignUpForm({ handleIsSignUpFormVisible }) {
+function SignUpForm({ handleIsSignUpFormVisible, isSignUpFormVisible }) {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
 
@@ -11,7 +11,8 @@ function SignUpForm({ handleIsSignUpFormVisible }) {
                 method: "POST",
                 headers: {"Content-Type": "application/json"},
                 body: JSON.stringify({
-                    username, password
+                    "username": username,
+                    "password_digest": password
                 })
             })
             let res = await req.json();
@@ -22,7 +23,7 @@ function SignUpForm({ handleIsSignUpFormVisible }) {
     }
 
     return (
-        <div className="close">
+        <div className="signup-modal" style={{ display: isSignUpFormVisible ? "flex" : "none" }}>
             <form className="signup-form" onSubmit={handleSubmit}>
                 <input 
                     type="text" 

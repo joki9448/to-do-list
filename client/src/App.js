@@ -36,7 +36,8 @@ function App() {
         onLogin={setLoggedInUser}       
         handleIsSignUpFormVisible={handleIsSignUpFormVisible}
         />
-        {isSignUpFormVisible ? <SignUpForm handleIsSignUpFormVisible={handleIsSignUpFormVisible}/> : null}    
+        <SignUpForm handleIsSignUpFormVisible={handleIsSignUpFormVisible} isSignUpFormVisible={isSignUpFormVisible}/>
+        {/* {isSignUpFormVisible ? <SignUpForm handleIsSignUpFormVisible={handleIsSignUpFormVisible}/> : null}     */}
       </>
     )
   }
