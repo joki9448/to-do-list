@@ -20,10 +20,9 @@ function LoginForm({ onLogin }) {
                 })
             })
             let res = await req.json()
-            if (req.ok) {
+            if (req.status === 201) {
                 onLogin(res.username)
             }
-            // console.log('res from loginForm', res)
         }   catch (error) {
             alert(error.message)
         }

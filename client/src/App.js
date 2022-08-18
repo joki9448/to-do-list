@@ -22,7 +22,7 @@ function App() {
 
 
   if (loggedInUser) {
-    return <ListContainer onLogout={setLoggedInUser}/>
+    return <ListContainer onLogout={setLoggedInUser} loggedInUser={loggedInUser} fetchUser={fetchUser}/>
   } else {
     return <LoginForm onLogin={setLoggedInUser}/>
   }

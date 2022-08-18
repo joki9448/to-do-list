@@ -1,4 +1,5 @@
 class SessionsController < ApplicationController
+  skip_before_action :authorized, only: :create
   wrap_parameters format: []
 
   def create
@@ -7,7 +8,7 @@ class SessionsController < ApplicationController
       session[:user_id] = user.id
       render json: user, status: 201
     else
-      render json: { error: {login: "Invalid username or password 😔"}}, status: 401
+      render json: { error: {login: "Invalid username or password"} }, status: 401
     end
     # session[:user_id] = user.id 
     # render json: user

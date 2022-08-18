@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import ListItem from './ListItem';
 
-function ListContainer({ onLogout }) {
+function ListContainer({ onLogout, loggedInUser, fetchUser }) {
     // const [listItems, setListitems] = useState([]);
+    useEffect(() => fetchUser, [])
 
     const handleLogout = async () => {
         let req = await fetch('/logout', {
@@ -11,7 +12,6 @@ function ListContainer({ onLogout }) {
         })
         onLogout(null);
     }
-
     return (
         <div className="list-container">
             <ListItem />
