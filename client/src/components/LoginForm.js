@@ -22,7 +22,7 @@ function LoginForm({ onLogin, handleIsSignUpFormVisible }) {
                 onLogin(res.username)
             }
         }   catch (error) {
-            alert(error.message)
+            alert(error.messages)
         }
     }
 

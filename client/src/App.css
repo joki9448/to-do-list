@@ -19,10 +19,27 @@
 }
 .signup-btn {
   margin-top: 5px;
-  /* margin-left: 47.8%; */
+  margin-left: 47.8%;
   width: 70px;
 }
 
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15%;
+}
+.signup-form input {
+  margin: 3px;
+}
+.signup-btn {
+  margin-top: 5px;
+  width: 70px;
+}
+.close-signup-form {
+  cursor: pointer;
+}
 /* .list-container {
   display: flex;
   justify-content: center;
