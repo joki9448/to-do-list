@@ -1,8 +1,6 @@
 import { useState } from 'react';
 
-import SignUpForm from './SignUpForm';
-
-function LoginForm({ onLogin }) {
+function LoginForm({ onLogin, handleIsSignUpFormVisible }) {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
 
@@ -28,23 +26,26 @@ function LoginForm({ onLogin }) {
         }
     }
 
+
     return (
-        <form className="login-form" onSubmit={handleSubmit}>
-            <input 
-                type="text" 
-                onChange={(e) => setUsername(e.target.value)}
-                value={username} 
-                placeholder="Enter username"
-            />
-            <input 
-                type="password" 
-                onChange={(e) => setPassword(e.target.value)}
-                value={password} 
-                placeholder="Enter password"
-            />
-            <button className="login-btn" type="submit">Login</button>
-            <button className="login-btn" onClick={() => alert('hi')}>Sign Up</button>
-        </form>
+        <>
+            <form className="login-form" onSubmit={handleSubmit}>
+                <input 
+                    type="text" 
+                    onChange={(e) => setUsername(e.target.value)}
+                    value={username} 
+                    placeholder="Enter username"
+                />
+                <input 
+                    type="password" 
+                    onChange={(e) => setPassword(e.target.value)}
+                    value={password} 
+                    placeholder="Enter password"
+                />
+                <button className="login-btn" type="submit">Login</button>
+            </form>        
+            <button className="signup-btn" onClick={() => handleIsSignUpFormVisible(true)}>Sign Up</button>
+        </>
     )
 };
 

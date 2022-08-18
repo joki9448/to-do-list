@@ -3,9 +3,11 @@ import { useEffect, useState } from 'react';
 
 import ListContainer from './components/ListContainer';
 import LoginForm from './components/LoginForm';
+import SignUpForm from './components/SignUpForm';
 
 function App() {
   const [loggedInUser, setLoggedInUser] = useState(null);
+  const [isSignUpFormVisible, handleIsSignUpFormVisible] = useState(false);
 
   const fetchUser = async () => {
     try {
@@ -22,9 +24,21 @@ function App() {
 
 
   if (loggedInUser) {
-    return <ListContainer onLogout={setLoggedInUser} loggedInUser={loggedInUser} fetchUser={fetchUser}/>
+    return <ListContainer 
+      onLogout={setLoggedInUser} 
+      loggedInUser={loggedInUser} 
+      fetchUser={fetchUser}
+      />
   } else {
-    return <LoginForm onLogin={setLoggedInUser}/>
+    return (
+      <>
+        <LoginForm 
+        onLogin={setLoggedInUser}       
+        handleIsSignUpFormVisible={handleIsSignUpFormVisible}
+        />
+        {isSignUpFormVisible ? <SignUpForm /> : null}    
+      </>
+    )
   }
   
 }

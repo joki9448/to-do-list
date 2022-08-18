@@ -17,6 +17,11 @@
   margin-top: 5px;
   width: 70px;
 }
+.signup-btn {
+  margin-top: 5px;
+  /* margin-left: 47.8%; */
+  width: 70px;
+}
 
 /* .list-container {
   display: flex;
