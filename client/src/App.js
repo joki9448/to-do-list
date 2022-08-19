@@ -37,7 +37,6 @@ function App() {
         handleIsSignUpFormVisible={handleIsSignUpFormVisible}
         />
         <SignUpForm handleIsSignUpFormVisible={handleIsSignUpFormVisible} isSignUpFormVisible={isSignUpFormVisible}/>
-        {/* {isSignUpFormVisible ? <SignUpForm handleIsSignUpFormVisible={handleIsSignUpFormVisible}/> : null}     */}
       </>
     )
   }

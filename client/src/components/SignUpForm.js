@@ -20,8 +20,7 @@ function SignUpForm({ handleIsSignUpFormVisible, isSignUpFormVisible }) {
             if (req.status === 201) {
                 alert('Account created!')
             }
-            console.log(req)
-            // let res = await req.json();
+            let res = await req.json();
         } catch (error) {
             alert(error.messages)
         }
@@ -48,7 +47,7 @@ function SignUpForm({ handleIsSignUpFormVisible, isSignUpFormVisible }) {
                     value={passwordConfirmation} 
                     placeholder="Confirm password"
                 />
-                <button className="login-btn" type="submit">Create Account</button>
+                <button className="signup-modal-btn" type="submit">Create Account</button>
             </form>        
             <div className="close-signup-form" onClick={() => {handleIsSignUpFormVisible(false)}}>X</div>
         </div>

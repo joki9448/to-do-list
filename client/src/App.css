@@ -4,11 +4,15 @@
 } */
 
 .login-form {
+  border: 1px solid black;
+  padding: 100px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
-  margin-top: 17%;
+  margin-left: 39%;
+  width: 150px;
+  margin-top: 15%;
 }
 .login-form input {
   margin: 3px;
@@ -19,7 +23,7 @@
 }
 .signup-btn {
   margin-top: 5px;
-  margin-left: 47.8%;
+  /* margin-left: 47.8%; */
   width: 70px;
 }
 
@@ -43,14 +47,14 @@
   margin-top: 15%;
   padding-left: 3%;
   padding-right: 3%;
-  opacity: 1;
 }
 .signup-form input {
   margin: 3px;
 }
-.signup-btn {
+.signup-modal-btn {
   margin-top: 5px;
   width: 70px;
+  
 }
 .close-signup-form {
   position: fixed;
