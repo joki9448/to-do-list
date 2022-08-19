@@ -113,53 +113,56 @@ body {
 
 .orb-colors {
   display: flex;
-  justify-content: center;
-  position: relative;
-  gap: 150px;
+  /* justify-content: center; */
+  position: fixed;
+  gap: 140px;
+  margin-top: 23%;
+  margin-left: 11%;
   z-index: -1;
 }
 .orb {
   border-radius: 100%;
+  box-shadow: 0px 0px 10px 2px white;
 }
 .orb-colors :nth-child(1) {
-  background-color: white;
+  background-color: #DC0007;
   height: 20px;
   width: 20px;
 }
 .orb-colors :nth-child(2) {
   background-color: #14DE0E;
-  height: 20px;
-  width: 20px;
+  height: 50px;
+  width: 50px;
 }
 .orb-colors :nth-child(3) {
   background-color: #03F7FF;
-  height: 20px;
-  width: 20px;
+  height: 30px;
+  width: 30px;
 }
 .orb-colors :nth-child(4) {
-  background-color: #DC0007;
+  background-color: white;
   height: 20px;
   width: 20px;
 }
 .orb-colors :nth-child(5) {
-  background-color: #FFFB00;
+  background-color: white;
   height: 20px;
   width: 20px;
 }
 .orb-colors :nth-child(6) {
   background-color: #ff37ca;
-  height: 20px;
-  width: 20px;
+  height: 40px;
+  width: 40px;
 }
 .orb-colors :nth-child(7) {
   background-color: #ffa90a;
-  height: 20px;
-  width: 20px;
+  height: 16px;
+  width: 16px;
 }
 .orb-colors :nth-child(8) {
-  background-color: #9500c7;
-  height: 20px;
-  width: 20px;
+  background-color: #FFFB00;
+  height: 31px;
+  width: 31px;
 }
 
 /* .list-container {
