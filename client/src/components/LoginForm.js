@@ -22,6 +22,8 @@ function LoginForm({ onLogin, handleIsSignUpFormVisible }) {
                 onLogin(res.username)
             } else if (!username || !password) {
                 alert('Please enter username or password')
+            } else if (req.status === 401) {
+                alert('Invalid username or password!')
             }
         }   catch (error) {
             alert(error.messages)
