@@ -20,7 +20,7 @@ function App() {
       alert(error.messages)
     }
   }
-  useEffect(() => fetchUser, [loggedInUser])
+  useEffect(() => fetchUser, [])
 
 
   if (loggedInUser) {

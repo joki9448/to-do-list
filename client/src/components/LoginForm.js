@@ -42,8 +42,8 @@ function LoginForm({ onLogin, handleIsSignUpFormVisible }) {
                     placeholder="Enter password"
                 />
                 <button className="login-btn" type="submit">Login</button>
-                <button className="signup-btn" onClick={() => handleIsSignUpFormVisible(true)}>Sign Up</button>
             </form>        
+            <button className="signup-btn" onClick={() => handleIsSignUpFormVisible(true)}>Sign Up</button>
         </>
     )
 };

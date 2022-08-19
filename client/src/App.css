@@ -7,12 +7,14 @@
   border: 1px solid black;
   padding: 100px;
   display: flex;
+  position: absolute;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   margin-left: 39%;
   width: 150px;
   margin-top: 15%;
+  z-index: -1;
 }
 .login-form input {
   margin: 3px;
@@ -22,9 +24,11 @@
   width: 70px;
 }
 .signup-btn {
-  margin-top: 5px;
-  /* margin-left: 47.8%; */
+  position: absolute;
+  margin-top: 27%;
+  margin-left: 47.85%;
   width: 70px;
+  z-index: 1;
 }
 
 .signup-modal {
