@@ -27,11 +27,17 @@ body {
   width: 100px;
   position: absolute;
   font-size: 38px;
-  margin-bottom: 220px;
+  margin-bottom: 225px;
+}
+.login-form :nth-child(2) {
+  margin-top: 25px;
+}
+.login-form :nth-child(4) {
+  margin-top: 25px;
 }
 .login-form input {
   font-size: 20px;
-  margin: 3px;
+  margin: 5px;
 }
 .login-btn {
   font-size: 18px;
@@ -41,7 +47,7 @@ body {
 .signup-btn {
   font-size: 18px;
   position: absolute;
-  margin-top: 27%;
+  margin-top: 29.5%;
   margin-left: 47.85%;
   width: 70px;
   /* z-index: 0; */
