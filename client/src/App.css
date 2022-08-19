@@ -3,11 +3,12 @@
 }
 
 body {
-  background: green;
+  background: black;
 }
 
 /* LOGIN FORM */
 .login-form {
+  border-radius: 15%;
   background: white;
   border: 1px solid black;
   padding: 100px;
@@ -19,12 +20,12 @@ body {
   margin-left: 39%;
   width: 150px;
   margin-top: 13%;
-  /* z-index: -1; */
+  z-index: 0;
 }
 .login-header {
   border: 1px solid black;
   text-align: center;
-  width: 100px;
+  width: 200px;
   position: absolute;
   font-size: 38px;
   margin-bottom: 225px;
@@ -36,6 +37,8 @@ body {
   margin-top: 25px;
 }
 .login-form input {
+  text-align: center;
+  border-radius: 10px;
   font-size: 20px;
   margin: 5px;
 }
@@ -50,7 +53,6 @@ body {
   margin-top: 29.5%;
   margin-left: 47.85%;
   width: 70px;
-  /* z-index: 0; */
 }
 
 /* SIGNUP FORM */
@@ -82,7 +84,7 @@ body {
 .signup-header {
   border: 1px solid black;
   text-align: center;
-  width: 100px;
+  width: 200px;
   position: absolute;
   margin-bottom: 210px;
 }
@@ -109,8 +111,56 @@ body {
   text-decoration: none;
 }
 
-
-
+.orb-colors {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  gap: 150px;
+  z-index: -1;
+}
+.orb {
+  border-radius: 100%;
+}
+.orb-colors :nth-child(1) {
+  background-color: white;
+  height: 20px;
+  width: 20px;
+}
+.orb-colors :nth-child(2) {
+  background-color: #14DE0E;
+  height: 20px;
+  width: 20px;
+}
+.orb-colors :nth-child(3) {
+  background-color: #03F7FF;
+  height: 20px;
+  width: 20px;
+}
+.orb-colors :nth-child(4) {
+  background-color: #DC0007;
+  height: 20px;
+  width: 20px;
+}
+.orb-colors :nth-child(5) {
+  background-color: #FFFB00;
+  height: 20px;
+  width: 20px;
+}
+.orb-colors :nth-child(6) {
+  background-color: #ff37ca;
+  height: 20px;
+  width: 20px;
+}
+.orb-colors :nth-child(7) {
+  background-color: #ffa90a;
+  height: 20px;
+  width: 20px;
+}
+.orb-colors :nth-child(8) {
+  background-color: #9500c7;
+  height: 20px;
+  width: 20px;
+}
 
 /* .list-container {
   display: flex;

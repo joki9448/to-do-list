@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import ListContainer from './components/ListContainer';
 import LoginForm from './components/LoginForm';
 import SignUpForm from './components/SignUpForm';
+import Orbs from './components/Orbs';
 
 function App() {
   const [loggedInUser, setLoggedInUser] = useState(null);
@@ -22,7 +23,6 @@ function App() {
   }
   useEffect(() => fetchUser, [])
 
-
   if (loggedInUser) {
     return <ListContainer 
       onLogout={setLoggedInUser} 
@@ -32,6 +32,7 @@ function App() {
   } else {
     return (
       <>
+        <Orbs />
         <LoginForm 
         onLogin={setLoggedInUser}       
         handleIsSignUpFormVisible={handleIsSignUpFormVisible}
