@@ -3,6 +3,7 @@ import { useState } from 'react';
 function SignUpForm({ handleIsSignUpFormVisible, isSignUpFormVisible }) {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
+    const [passwordConfirmation, setPasswordConfirmation] = useState('');
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -12,12 +13,13 @@ function SignUpForm({ handleIsSignUpFormVisible, isSignUpFormVisible }) {
                 headers: {"Content-Type": "application/json"},
                 body: JSON.stringify({
                     "username": username,
-                    "password_digest": password
+                    "password": password,
+                    "password_confirmation": passwordConfirmation
                 })
             })
             let res = await req.json();
-            setUsername(res.username);
-            setPassword(res.password_digest);
+            // setUsername(res.username);
+            // setPassword(res.password_digest);
         } catch (error) {
             alert(error.messages)
         }
@@ -37,6 +39,12 @@ function SignUpForm({ handleIsSignUpFormVisible, isSignUpFormVisible }) {
                     onChange={(e) => setPassword(e.target.value)}
                     value={password} 
                     placeholder="Create password"
+                />
+                <input 
+                    type="password" 
+                    onChange={(e) => setPasswordConfirmation(e.target.value)}
+                    value={passwordConfirmation} 
+                    placeholder="Confirm password"
                 />
                 <button className="login-btn" type="submit">Create Account</button>
             </form>        
