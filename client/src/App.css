@@ -115,38 +115,75 @@ body {
 /* Login Page Background Animation */
 
 @keyframes spin {
-  from {transform: rotate(0deg);}
-  to {transform: rotate(360deg);}
+  from {transform: rotate(0deg);
+  }
+  to {transform: rotate(360deg);
+  }
 }
+
+@keyframes glow-red {
+  from {box-shadow: 0px 0px 10px 2px #DC0007}
+  to {box-shadow: 0px 0px 15px 5px #DC0007}
+}
+@keyframes glow-grn {
+  from {box-shadow: 0px 0px 10px 2px #14DE0E}
+  to {box-shadow: 0px 0px 15px 5px #14DE0E}
+}
+@keyframes glow-blu {
+  from {box-shadow: 0px 0px 10px 2px #03F7FF}
+  to {box-shadow: 0px 0px 15px 5px #03F7FF}
+}
+@keyframes glow-pnk {
+  from {box-shadow: 0px 0px 10px 2px #ff37ca;}
+  to {box-shadow: 0px 0px 15px 5px #ff37ca;}
+}
+@keyframes glow-orj {
+  from {box-shadow: 0px 0px 10px 2px #ffa90a;}
+  to {box-shadow: 0px 0px 15px 5px #ffa90a;}
+}
+@keyframes glow-yel {
+  from {box-shadow: 0px 0px 10px 2px #FFFB00;}
+  to {box-shadow: 0px 0px 15px 5px #FFFB00;}
+}
+
+
+
 .orb-colors {
   display: flex;
   position: fixed;
-  gap: 140px;
+  gap: 130px;
   margin-top: 23%;
-  margin-left: 11%;
+  margin-left: 13%;
   animation: spin 18s linear infinite;
   z-index: -1;
 }
 .orb {
   border-radius: 100%;
+  animation: glow 5s linear infinite;
 }
 .orb-colors :nth-child(1) {
   background-color: #DC0007;
   height: 20px;
   width: 20px;
   box-shadow: 0px 0px 10px 2px #DC0007;
+  animation: glow-red 5s ease-in-out infinite;
+  
 }
 .orb-colors :nth-child(2) {
   background-color: #14DE0E;
   height: 50px;
   width: 50px;
   box-shadow: 0px 0px 10px 2px #14DE0E;
+  animation: glow-grn 5s ease-in-out infinite;
+
 }
 .orb-colors :nth-child(3) {
   background-color: #03F7FF;
   height: 30px;
   width: 30px;
   box-shadow: 0px 0px 10px 2px #03F7FF;
+  animation: glow-blu 5s ease-in-out infinite;
+
 }
 .orb-colors :nth-child(4) {
   background-color: white;
@@ -163,18 +200,24 @@ body {
   height: 40px;
   width: 40px;
   box-shadow: 0px 0px 10px 2px #ff37ca;
+  animation: glow-pnk 5s ease-in-out infinite;
+
 }
 .orb-colors :nth-child(7) {
   background-color: #ffa90a;
   height: 16px;
   width: 16px;
   box-shadow: 0px 0px 10px 2px #ffa90a;
+  animation: glow-orj 5s ease-in-out infinite;
+
 }
 .orb-colors :nth-child(8) {
   background-color: #FFFB00;
   height: 31px;
   width: 31px;
   box-shadow: 0px 0px 10px 2px #FFFB00;
+  animation: glow-yel 5s ease-in-out infinite;
+
 }
 
 /* .list-container {
