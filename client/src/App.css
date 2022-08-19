@@ -1,8 +1,4 @@
-/* body {
-  display: flex;
-  justify-content: center;
-} */
-
+/* LOGIN FORM */
 .login-form {
   border: 1px solid black;
   padding: 100px;
@@ -16,6 +12,11 @@
   margin-top: 15%;
   /* z-index: -1; */
 }
+.login-header {
+  position: absolute;
+  font-size: 25px;
+  margin-bottom: 175px;
+}
 .login-form input {
   margin: 3px;
 }
@@ -25,12 +26,13 @@
 }
 .signup-btn {
   position: absolute;
-  margin-top: 27%;
+  margin-top: 26.75%;
   margin-left: 47.85%;
   width: 70px;
   /* z-index: 0; */
 }
 
+/* SIGNUP FORM */
 .signup-modal {
   position: fixed;
   justify-content: center;
