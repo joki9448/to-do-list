@@ -122,28 +122,46 @@ body {
 }
 
 @keyframes glow-red {
-  from {box-shadow: 0px 0px 10px 2px #DC0007}
-  to {box-shadow: 0px 0px 15px 5px #DC0007}
+  0% {box-shadow: 0px 0px 11px 2px #DC0007;}
+  25% {box-shadow: 0px 0px 12px 2.5px#DC0007;}
+  50% {box-shadow: 0px 0px 13px 3px #DC0007;}
+  75% {box-shadow: 0px 0px 14px 4px #DC0007;}
+  100% {box-shadow: 0px 0px 15px 5px #DC0007;}
 }
 @keyframes glow-grn {
-  from {box-shadow: 0px 0px 10px 2px #14DE0E}
-  to {box-shadow: 0px 0px 15px 5px #14DE0E}
+  0% {box-shadow: 0px 0px 11px 2px #14DE0E;}
+  25% {box-shadow: 0px 0px 12px 2.5px#14DE0E;}
+  50% {box-shadow: 0px 0px 13px 3px #14DE0E;}
+  75% {box-shadow: 0px 0px 14px 4px #14DE0E;}
+  100% {box-shadow: 0px 0px 15px 5px #14DE0E;}
 }
 @keyframes glow-blu {
-  from {box-shadow: 0px 0px 10px 2px #03F7FF}
-  to {box-shadow: 0px 0px 15px 5px #03F7FF}
+  0% {box-shadow: 0px 0px 11px 2px #03F7FF;}
+  25% {box-shadow: 0px 0px 12px 2.5px#03F7FF;}
+  50% {box-shadow: 0px 0px 13px 3px #03F7FF;}
+  75% {box-shadow: 0px 0px 14px 4px #03F7FF;}
+  100% {box-shadow: 0px 0px 15px 5px #03F7FF;}
 }
 @keyframes glow-pnk {
-  from {box-shadow: 0px 0px 10px 2px #ff37ca;}
-  to {box-shadow: 0px 0px 15px 5px #ff37ca;}
+  0% {box-shadow: 0px 0px 11px 2px #ff37ca;}
+  25% {box-shadow: 0px 0px 12px 2.5px#ff37ca;}
+  50% {box-shadow: 0px 0px 13px 3px #ff37ca;}
+  75% {box-shadow: 0px 0px 14px 4px #ff37ca;}
+  100% {box-shadow: 0px 0px 15px 5px #ff37ca;}
 }
 @keyframes glow-orj {
-  from {box-shadow: 0px 0px 10px 2px #ffa90a;}
-  to {box-shadow: 0px 0px 15px 5px #ffa90a;}
+  0% {box-shadow: 0px 0px 11px 2px #ffa90a;}
+  25% {box-shadow: 0px 0px 12px 2.5px#ffa90a;}
+  50% {box-shadow: 0px 0px 13px 3px #ffa90a;}
+  75% {box-shadow: 0px 0px 14px 4px #ffa90a;}
+  100% {box-shadow: 0px 0px 15px 5px #ffa90a;}
 }
 @keyframes glow-yel {
-  from {box-shadow: 0px 0px 10px 2px #FFFB00;}
-  to {box-shadow: 0px 0px 15px 5px #FFFB00;}
+  0% {box-shadow: 0px 0px 11px 2px #FFFB00;}
+  25% {box-shadow: 0px 0px 12px 2.5px#FFFB00;}
+  50% {box-shadow: 0px 0px 13px 3px #FFFB00;}
+  75% {box-shadow: 0px 0px 14px 4px #FFFB00;}
+  100% {box-shadow: 0px 0px 15px 5px #FFFB00;}
 }
 
 
@@ -166,7 +184,7 @@ body {
   height: 20px;
   width: 20px;
   box-shadow: 0px 0px 10px 2px #DC0007;
-  animation: glow-red 5s ease-in-out infinite;
+  animation:1s ease-in-out infinite alternate glow-red;
   
 }
 .orb-colors :nth-child(2) {
@@ -174,7 +192,7 @@ body {
   height: 50px;
   width: 50px;
   box-shadow: 0px 0px 10px 2px #14DE0E;
-  animation: glow-grn 5s ease-in-out infinite;
+  animation: 1s ease-in-out infinite alternate glow-grn;
 
 }
 .orb-colors :nth-child(3) {
@@ -182,7 +200,7 @@ body {
   height: 30px;
   width: 30px;
   box-shadow: 0px 0px 10px 2px #03F7FF;
-  animation: glow-blu 5s ease-in-out infinite;
+  animation: 1s ease-in-out infinite alternate glow-blu;
 
 }
 .orb-colors :nth-child(4) {
@@ -200,7 +218,7 @@ body {
   height: 40px;
   width: 40px;
   box-shadow: 0px 0px 10px 2px #ff37ca;
-  animation: glow-pnk 5s ease-in-out infinite;
+  animation: 1s ease-in-out infinite alternate glow-pnk;
 
 }
 .orb-colors :nth-child(7) {
@@ -208,7 +226,7 @@ body {
   height: 16px;
   width: 16px;
   box-shadow: 0px 0px 10px 2px #ffa90a;
-  animation: glow-orj 5s ease-in-out infinite;
+  animation: 1s ease-in-out infinite alternate glow-orj;
 
 }
 .orb-colors :nth-child(8) {
@@ -216,7 +234,7 @@ body {
   height: 31px;
   width: 31px;
   box-shadow: 0px 0px 10px 2px #FFFB00;
-  animation: glow-yel 5s ease-in-out infinite;
+  animation: 1s ease-in-out infinite alternate glow-yel;
 
 }
 
