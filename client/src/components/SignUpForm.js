@@ -16,7 +16,8 @@ function SignUpForm({ handleIsSignUpFormVisible, isSignUpFormVisible }) {
                 })
             })
             let res = await req.json();
-            console.log('signup res', res);
+            setUsername(res.username);
+            setPassword(res.password_digest);
         } catch (error) {
             alert(error.messages)
         }
