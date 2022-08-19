@@ -16,15 +16,18 @@ function SignUpForm({ handleIsSignUpFormVisible, isSignUpFormVisible }) {
                     "password": password,
                     "password_confirmation": passwordConfirmation
                 })
-            })
+            });
             if (req.status === 201) {
-                alert('Account created!')
+                alert('Account created!');
+                handleIsSignUpFormVisible(false);
+            } else if (req.status === 422) {
+                alert('Please enter a username and password, then confirm your password!');
             }
             let res = await req.json();
         } catch (error) {
             alert(error.messages)
         }
-    }
+    };
 
     return (
         <div className="signup-modal" style={{ display: isSignUpFormVisible ? "flex" : "none" }}>
