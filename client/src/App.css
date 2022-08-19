@@ -74,11 +74,18 @@ body {
   padding-right: 3%; */
 }
 .signup-header {
-
+  border: 1px solid black;
+  text-align: center;
+  width: 100px;
+  position: absolute;
+  margin-bottom: 210px;
 }
 .signup-form input {
   font-size: 20px;
   margin: 3px;
+}
+.signup-form :nth-child(2) {
+  margin-top: 80px;
 }
 .signup-modal-btn {
   font-size: 18px;
