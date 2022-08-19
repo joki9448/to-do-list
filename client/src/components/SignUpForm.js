@@ -33,7 +33,7 @@ function SignUpForm({ handleIsSignUpFormVisible, isSignUpFormVisible }) {
         <div className="signup-modal" style={{ 
                 visibility: isSignUpFormVisible ? "visible" : "hidden",
                 opacity: isSignUpFormVisible ? "1" : "0.2",
-                transition: "all 0.165s",
+                transition: "all 0.18s ease-in-out",
             }}
         >
             <form className="signup-form" onSubmit={handleSubmit}>
