@@ -20,6 +20,8 @@ function LoginForm({ onLogin, handleIsSignUpFormVisible }) {
             let res = await req.json()
             if (req.status === 201) {
                 onLogin(res.username)
+            } else if (!username || !password) {
+                alert('Please enter username or password')
             }
         }   catch (error) {
             alert(error.messages)
