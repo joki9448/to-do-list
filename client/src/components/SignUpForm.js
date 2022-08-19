@@ -32,6 +32,7 @@ function SignUpForm({ handleIsSignUpFormVisible, isSignUpFormVisible }) {
     return (
         <div className="signup-modal" style={{ display: isSignUpFormVisible ? "flex" : "none" }}>
             <form className="signup-form" onSubmit={handleSubmit}>
+                <h1 className="signup-header">SIGN UP</h1>
                 <input 
                     type="text" 
                     onChange={(e) => setUsername(e.target.value)}

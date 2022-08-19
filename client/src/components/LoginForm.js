@@ -33,7 +33,7 @@ function LoginForm({ onLogin, handleIsSignUpFormVisible }) {
     return (
         <>
             <form className="login-form" onSubmit={handleSubmit}>
-                <h1 className="login-header">Login</h1>
+                <h1 className="login-header">LOGIN</h1>
                 <input 
                     type="text" 
                     onChange={(e) => setUsername(e.target.value)}

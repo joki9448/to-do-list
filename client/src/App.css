@@ -2,8 +2,13 @@
   font-family: 'Nanum Pen Script';
 }
 
+body {
+  background: green;
+}
+
 /* LOGIN FORM */
 .login-form {
+  background: white;
   border: 1px solid black;
   padding: 100px;
   display: flex;
@@ -13,13 +18,16 @@
   align-items: center;
   margin-left: 39%;
   width: 150px;
-  margin-top: 15%;
+  margin-top: 13%;
   /* z-index: -1; */
 }
 .login-header {
+  border: 1px solid black;
+  text-align: center;
+  width: 100px;
   position: absolute;
   font-size: 38px;
-  margin-bottom: 200px;
+  margin-bottom: 220px;
 }
 .login-form input {
   font-size: 20px;
@@ -27,13 +35,13 @@
 }
 .login-btn {
   font-size: 18px;
-  margin-top: 5px;
+  margin-top: 13px;
   width: 70px;
 }
 .signup-btn {
   font-size: 18px;
   position: absolute;
-  margin-top: 28%;
+  margin-top: 27%;
   margin-left: 47.85%;
   width: 70px;
   /* z-index: 0; */
@@ -43,7 +51,7 @@
 .signup-modal {
   position: fixed;
   justify-content: center;
-  background-color: rgba(0.75, 0.75, 0.75, 0.75);
+  background-color: rgba(0.7, 0.7, 0.7, 0.7);
   height: 100vh;
   width: 100vw;
   bottom: 0;
@@ -57,26 +65,38 @@
   background-color: white;
   border: 1px solid white;
   height: 25%;
-  margin-top: 15%;
-  padding-left: 3%;
-  padding-right: 3%;
+  margin-top: 13%;
+  margin-left: 1%;
+  padding: 4%;
+  /* padding-left: 3%;
+  padding-right: 3%; */
+}
+.signup-header {
+  
 }
 .signup-form input {
+  font-size: 20px;
   margin: 3px;
 }
 .signup-modal-btn {
-  margin-top: 5px;
+  font-size: 18px;
+  margin-top: 25px;
   width: 70px;
   
 }
 .close-signup-form {
+  font-size: 30px;
   position: fixed;
-  margin-right: 13%;
-  margin-top: 16%;
+  margin-right: 15%;
+  margin-top: 14%;
   color: black;
   cursor: pointer;
   text-decoration: none;
 }
+
+
+
+
 /* .list-container {
   display: flex;
   justify-content: center;
