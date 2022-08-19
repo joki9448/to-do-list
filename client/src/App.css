@@ -111,9 +111,14 @@ body {
   text-decoration: none;
 }
 
+
+/* Login Page Background Animation */
+
+@keyframes orbit {
+  
+}
 .orb-colors {
   display: flex;
-  /* justify-content: center; */
   position: fixed;
   gap: 140px;
   margin-top: 23%;
@@ -122,22 +127,24 @@ body {
 }
 .orb {
   border-radius: 100%;
-  box-shadow: 0px 0px 10px 2px white;
 }
 .orb-colors :nth-child(1) {
   background-color: #DC0007;
   height: 20px;
   width: 20px;
+  box-shadow: 0px 0px 10px 2px #DC0007;
 }
 .orb-colors :nth-child(2) {
   background-color: #14DE0E;
   height: 50px;
   width: 50px;
+  box-shadow: 0px 0px 10px 2px #14DE0E;
 }
 .orb-colors :nth-child(3) {
   background-color: #03F7FF;
   height: 30px;
   width: 30px;
+  box-shadow: 0px 0px 10px 2px #03F7FF;
 }
 .orb-colors :nth-child(4) {
   background-color: white;
@@ -153,16 +160,19 @@ body {
   background-color: #ff37ca;
   height: 40px;
   width: 40px;
+  box-shadow: 0px 0px 10px 2px #ff37ca;
 }
 .orb-colors :nth-child(7) {
   background-color: #ffa90a;
   height: 16px;
   width: 16px;
+  box-shadow: 0px 0px 10px 2px #ffa90a;
 }
 .orb-colors :nth-child(8) {
   background-color: #FFFB00;
   height: 31px;
   width: 31px;
+  box-shadow: 0px 0px 10px 2px #FFFB00;
 }
 
 /* .list-container {
