@@ -114,8 +114,9 @@ body {
 
 /* Login Page Background Animation */
 
-@keyframes orbit {
-  
+@keyframes spin {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
 }
 .orb-colors {
   display: flex;
@@ -123,6 +124,7 @@ body {
   gap: 140px;
   margin-top: 23%;
   margin-left: 11%;
+  animation: spin 18s linear infinite;
   z-index: -1;
 }
 .orb {
