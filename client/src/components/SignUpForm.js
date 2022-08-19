@@ -17,9 +17,11 @@ function SignUpForm({ handleIsSignUpFormVisible, isSignUpFormVisible }) {
                     "password_confirmation": passwordConfirmation
                 })
             })
-            let res = await req.json();
-            // setUsername(res.username);
-            // setPassword(res.password_digest);
+            if (req.status === 201) {
+                alert('Account created!')
+            }
+            console.log(req)
+            // let res = await req.json();
         } catch (error) {
             alert(error.messages)
         }
