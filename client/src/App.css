@@ -8,7 +8,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 15%;
+  margin-top: 17%;
 }
 .login-form input {
   margin: 3px;
@@ -24,24 +24,40 @@
 }
 
 .signup-modal {
+  position: fixed;
   justify-content: center;
-  align-items: center;
-  background-color: grey;
+  background-color: rgba(0.75, 0.75, 0.75, 0.75);
   height: 100vh;
   width: 100vw;
+  bottom: 0;
+  left: 0;
 }
 .signup-form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: white;
+  border: 1px solid white;
+  height: 25%;
+  margin-top: 15%;
+  padding-left: 3%;
+  padding-right: 3%;
 }
 .signup-form input {
+  margin: 3px;
 }
 .signup-btn {
+  margin-top: 5px;
+  width: 70px;
 }
 .close-signup-form {
+  position: fixed;
+  margin-right: 13%;
+  margin-top: 16%;
+  color: black;
   cursor: pointer;
+  text-decoration: none;
 }
 /* .list-container {
   display: flex;

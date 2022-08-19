@@ -39,7 +39,7 @@ function SignUpForm({ handleIsSignUpFormVisible, isSignUpFormVisible }) {
                 />
                 <button className="login-btn" type="submit">Create Account</button>
             </form>        
-            <div className="close-signup-form" onClick={() => {handleIsSignUpFormVisible(false)}}>x</div>
+            <div className="close-signup-form" onClick={() => {handleIsSignUpFormVisible(false)}}>X</div>
         </div>
     )
 }
