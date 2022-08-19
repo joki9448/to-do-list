@@ -20,14 +20,11 @@ function LoginForm({ onLogin, handleIsSignUpFormVisible }) {
             let res = await req.json()
             if (req.status === 201) {
                 onLogin(res.username)
-            } else if (req.status === 401) {
-                alert('Invalid username or password')
             }
         }   catch (error) {
             alert(error.messages)
         }
     }
-
 
     return (
         <>
@@ -45,7 +42,7 @@ function LoginForm({ onLogin, handleIsSignUpFormVisible }) {
                     placeholder="Enter password"
                 />
                 <button className="login-btn" type="submit">Login</button>
-            <button className="signup-btn" onClick={() => handleIsSignUpFormVisible(true)}>Sign Up</button>
+                <button className="signup-btn" onClick={() => handleIsSignUpFormVisible(true)}>Sign Up</button>
             </form>        
         </>
     )
