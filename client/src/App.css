@@ -9,7 +9,6 @@ body {
 .login-form {
   border-radius: 15%;
   background: white;
-  border: 1px solid black;
   padding: 100px;
   display: flex;
   position: absolute;
@@ -20,6 +19,7 @@ body {
   width: 150px;
   margin-top: 13%;
   z-index: 0;
+  /* box-shadow: 0px 0px 7px 7px white; */
 }
 .login-header {
   background: black;
@@ -130,70 +130,104 @@ body {
 
 @keyframes glow-wte {
   0% {box-shadow: 0px 0px 11px 2px white;}
-  25% {box-shadow: 0px 0px 12px 2.5pxwhite;}
-  50% {box-shadow: 0px 0px 13px 3px white;}
-  75% {box-shadow: 0px 0px 14px 4px white;}
-  100% {box-shadow: 0px 0px 15px 5px white;}
+  25% {box-shadow: 0px 0px 13px 2.5pxwhite;}
+  50% {box-shadow: 0px 0px 15px 3px white;}
+  75% {box-shadow: 0px 0px 17px 4px white;}
+  100% {box-shadow: 0px 0px 19px 5px white;}
 }
 @keyframes glow-red {
   0% {box-shadow: 0px 0px 11px 2px #DC0007;}
-  25% {box-shadow: 0px 0px 12px 2.5px#DC0007;}
-  50% {box-shadow: 0px 0px 13px 3px #DC0007;}
-  75% {box-shadow: 0px 0px 14px 4px #DC0007;}
-  100% {box-shadow: 0px 0px 15px 5px #DC0007;}
+  25% {box-shadow: 0px 0px 13px 2.5px#DC0007;}
+  50% {box-shadow: 0px 0px 15px 3px #DC0007;}
+  75% {box-shadow: 0px 0px 17px 4px #DC0007;}
+  100% {box-shadow: 0px 0px 19px 5px #DC0007;}
 }
 @keyframes glow-grn {
   0% {box-shadow: 0px 0px 11px 2px #14DE0E;}
-  25% {box-shadow: 0px 0px 12px 2.5px#14DE0E;}
-  50% {box-shadow: 0px 0px 13px 3px #14DE0E;}
-  75% {box-shadow: 0px 0px 14px 4px #14DE0E;}
-  100% {box-shadow: 0px 0px 15px 5px #14DE0E;}
+  25% {box-shadow: 0px 0px 13px 2.5px#14DE0E;}
+  50% {box-shadow: 0px 0px 15px 3px #14DE0E;}
+  75% {box-shadow: 0px 0px 17px 4px #14DE0E;}
+  100% {box-shadow: 0px 0px 19px 5px #14DE0E;}
 }
 @keyframes glow-blu {
   0% {box-shadow: 0px 0px 11px 2px #03F7FF;}
-  25% {box-shadow: 0px 0px 12px 2.5px#03F7FF;}
-  50% {box-shadow: 0px 0px 13px 3px #03F7FF;}
-  75% {box-shadow: 0px 0px 14px 4px #03F7FF;}
-  100% {box-shadow: 0px 0px 15px 5px #03F7FF;}
+  25% {box-shadow: 0px 0px 13px 2.5px#03F7FF;}
+  50% {box-shadow: 0px 0px 15px 3px #03F7FF;}
+  75% {box-shadow: 0px 0px 17px 4px #03F7FF;}
+  100% {box-shadow: 0px 0px 19px 5px #03F7FF;}
 }
 @keyframes glow-pnk {
   0% {box-shadow: 0px 0px 11px 2px #ff37ca;}
-  25% {box-shadow: 0px 0px 12px 2.5px#ff37ca;}
-  50% {box-shadow: 0px 0px 13px 3px #ff37ca;}
-  75% {box-shadow: 0px 0px 14px 4px #ff37ca;}
-  100% {box-shadow: 0px 0px 15px 5px #ff37ca;}
+  25% {box-shadow: 0px 0px 13px 2.5px#ff37ca;}
+  50% {box-shadow: 0px 0px 15px 3px #ff37ca;}
+  75% {box-shadow: 0px 0px 17px 4px #ff37ca;}
+  100% {box-shadow: 0px 0px 19px 5px #ff37ca;}
 }
 @keyframes glow-orj {
   0% {box-shadow: 0px 0px 11px 2px #ffa90a;}
-  25% {box-shadow: 0px 0px 12px 2.5px#ffa90a;}
-  50% {box-shadow: 0px 0px 13px 3px #ffa90a;}
-  75% {box-shadow: 0px 0px 14px 4px #ffa90a;}
-  100% {box-shadow: 0px 0px 15px 5px #ffa90a;}
+  25% {box-shadow: 0px 0px 13px 2.5px#ffa90a;}
+  50% {box-shadow: 0px 0px 15px 3px #ffa90a;}
+  75% {box-shadow: 0px 0px 17px 4px #ffa90a;}
+  100% {box-shadow: 0px 0px 19px 5px #ffa90a;}
 }
 @keyframes glow-yel {
   0% {box-shadow: 0px 0px 11px 2px #FFFB00;}
-  25% {box-shadow: 0px 0px 12px 2.5px#FFFB00;}
-  50% {box-shadow: 0px 0px 13px 3px #FFFB00;}
-  75% {box-shadow: 0px 0px 14px 4px #FFFB00;}
-  100% {box-shadow: 0px 0px 15px 5px #FFFB00;}
+  25% {box-shadow: 0px 0px 13px 2.5px#FFFB00;}
+  50% {box-shadow: 0px 0px 15px 3px #FFFB00;}
+  75% {box-shadow: 0px 0px 17px 4px #FFFB00;}
+  100% {box-shadow: 0px 0px 19px 5px #FFFB00;}
 }
 @keyframes glow-prp {
   0% {box-shadow: 0px 0px 11px 2px #9d00ff}
-  25% {box-shadow: 0px 0px 11px 2px #9d00ff}
-  50% {box-shadow: 0px 0px 11px 2px #9d00ff}
-  75% {box-shadow: 0px 0px 11px 2px #9d00ff}
-  100% {box-shadow: 0px 0px 11px 2px #9d00ff}
+  25% {box-shadow: 0px 0px 13px 2.5px #9d00ff}
+  50% {box-shadow: 0px 0px 15px 3px #9d00ff}
+  75% {box-shadow: 0px 0px 17px 4px #9d00ff}
+  100% {box-shadow: 0px 0px 19px 5px #9d00ff}
 }
-
+@keyframes glow-big-grn {
+  0% {box-shadow: 0px 0px 12px 7px #14DE0E;}
+  25% {box-shadow: 0px 0px 14px 8px#14DE0E;}
+  50% {box-shadow: 0px 0px 16px 9px #14DE0E;}
+  75% {box-shadow: 0px 0px 18px 10px #14DE0E;}
+  100% {box-shadow: 0px 0px 20px 11px #14DE0E;}
+}
+@keyframes glow-big-blu {
+  0% {box-shadow: 0px 0px 12px 8px #03F7FF;}
+  25% {box-shadow: 0px 0px 14px 10px#03F7FF;}
+  50% {box-shadow: 0px 0px 16px 12px #03F7FF;}
+  75% {box-shadow: 0px 0px 18px 14px #03F7FF;}
+  100% {box-shadow: 0px 0px 20px 16px #03F7FF;}
+}
+@keyframes glow-big-red {
+  0% {box-shadow: 0px 0px 12px 7px #DC0007;}
+  25% {box-shadow: 0px 0px 14px 8px#DC0007;}
+  50% {box-shadow: 0px 0px 16px 9px #DC0007;}
+  75% {box-shadow: 0px 0px 18px 10px #DC0007;}
+  100% {box-shadow: 0px 0px 20px 11px #DC0007;}
+}
+@keyframes glow-big-orj {
+  0% {box-shadow: 0px 0px 15px 8px #ffa90a;}
+  25% {box-shadow: 0px 0px 18px 9px#ffa90a;}
+  50% {box-shadow: 0px 0px 21px 10px #ffa90a;}
+  75% {box-shadow: 0px 0px 24px 11px #ffa90a;}
+  100% {box-shadow: 0px 0px 27px 12px #ffa90a;}
+}
+@keyframes glow-big-yel {
+  0% {box-shadow: 0px 0px 10px 8px #d9ff00;}
+  25% {box-shadow: 0px 0px 11px 9px#d9ff00;}
+  50% {box-shadow: 0px 0px 12px 10px #d9ff00;}
+  75% {box-shadow: 0px 0px 13px 11px #d9ff00;}
+  100% {box-shadow: 0px 0px 14px 12px #d9ff00;}
+}
 /* FIRST SET OF ORBS 1111111 */
 
 .orb-colors {
   display: flex;
   position: fixed;
   gap: 200px;
-  margin-top: 23%;
-  margin-left: 1%;
-  animation: spin 20s linear infinite;
+  margin-top: 24%;
+  margin-right: 9%;
+  animation: spin 15s linear infinite;
   z-index: -1;
 }
 .orb-colors .orb {
@@ -201,52 +235,45 @@ body {
   animation: glow 5s linear infinite;
 }
 .orb-colors :nth-child(1) {
-  background-color: #DC0007;
-  height: 20px;
-  width: 20px;
-  box-shadow: 0px 0px 10px 2px #DC0007;
-  animation:1s ease-in-out infinite alternate glow-red;
-  
+  background-color: #d9ff00;
+  height: 80px;
+  width: 80px;
+  animation:1s ease-in-out infinite alternate glow-yel; 
 }
 .orb-colors :nth-child(2) {
   background-color: #14DE0E;
   height: 50px;
   width: 50px;
-  box-shadow: 0px 0px 10px 2px #14DE0E;
   animation: 1s ease-in-out infinite alternate glow-grn;
-
 }
 .orb-colors :nth-child(3) {
   background-color: #03F7FF;
   height: 30px;
   width: 30px;
-  box-shadow: 0px 0px 10px 2px #03F7FF;
   animation: 1s ease-in-out infinite alternate glow-blu;
-
 }
 .orb-colors :nth-child(4) {
   background-color: white;
   height: 20px;
   width: 20px;
+  animation: 1s ease-in-out infinite alternate glow-wte;
 }
 .orb-colors :nth-child(5) {
   background-color: white;
   height: 20px;
   width: 20px;
+  animation: 1s ease-in-out infinite alternate glow-wte;
 }
 .orb-colors :nth-child(6) {
   background-color: #ff37ca;
   height: 40px;
   width: 40px;
-  box-shadow: 0px 0px 10px 2px #ff37ca;
   animation: 1s ease-in-out infinite alternate glow-pnk;
-
 }
 .orb-colors :nth-child(7) {
   background-color: #ffa90a;
   height: 16px;
   width: 16px;
-  box-shadow: 0px 0px 10px 2px #ffa90a;
   animation: 1s ease-in-out infinite alternate glow-orj;
 
 }
@@ -254,7 +281,6 @@ body {
   background-color: #FFFB00;
   height: 31px;
   width: 31px;
-  box-shadow: 0px 0px 10px 2px #FFFB00;
   animation: 1s ease-in-out infinite alternate glow-yel;
 
 }
@@ -266,8 +292,8 @@ body {
   position: fixed;
   gap: 125px;
   margin-top: 21%;
-  margin-left: 16%;
-  animation: reverse-spin 15s linear infinite;
+  margin-left: 13%;
+  animation: reverse-spin 10s linear infinite;
   z-index: -1;
 }
 .orbs-colors-2 .orb {
@@ -277,7 +303,6 @@ body {
   background-color: #ff37ca;
   height: 13px;
   width: 13px;
-  box-shadow: 0px 0px 10px 2px #ff37ca;
   animation: 1s ease-in-out infinite alternate glow-pnk;
   
 }
@@ -285,17 +310,13 @@ body {
   background-color: white;
   height: 33px;
   width: 33px;
-  box-shadow: 0px 0px 10px 2px white;
   animation: 1s ease-in-out infinite alternate glow-wte;
-
 }
 .orbs-colors-2 :nth-child(3) {
   background-color: #14DE0E;
   height: 16px;
   width: 16px;
-  box-shadow: 0px 0px 10px 2px #14DE0E;
   animation: 1s ease-in-out infinite alternate glow-grn;
-
 }
 .orbs-colors-2 :nth-child(4) {
   background-color: white;
@@ -311,26 +332,82 @@ body {
   background-color: #9d00ff;
   height: 31px;
   width: 31px;
-  box-shadow: 0px 0px 10px 2px #9d00ff;
   animation: 1s ease-in-out infinite alternate glow-prp;
-
 }
 .orbs-colors-2 :nth-child(7) {
   background-color: #ffa90a;
   height: 40px;
   width: 40px;
-  box-shadow: 0px 0px 10px 2px #ffa90a;
   animation: 1s ease-in-out infinite alternate glow-orj;
-
 }
 .orbs-colors-2 :nth-child(8) {
   background-color: #DC0007;
   height: 30px;
   width: 30px;
-  box-shadow: 0px 0px 10px 2px #DC0007;
   animation: 1s ease-in-out infinite alternate glow-red;
+}
+
+/* BIG ORBS */
+.orb-colors-3 {
+  display: flex;
+  position: fixed;
+  gap: 250px;
+  margin-top: 15%;
+  margin-right: 13%;
+  animation: spin 15s linear infinite;
+  z-index: -2;
+}
+.orb-colors-3 .orb {
+  border-radius: 100%;
+}
+.orb-colors-3 :nth-child(1) {
+  background-color: #14DE0E;
+  height: 200px;
+  width: 200px;
+  animation: 3s ease-in-out infinite alternate glow-big-grn;
+}
+.orb-colors-3 :nth-child(2) {
+  background-color: #03F7FF;
+  height: 120px;
+  width: 120px;
+  animation: 2s ease-in-out infinite alternate glow-big-blu;
+}
+.orb-colors-3 :nth-child(3) {
+  background-color: #DC0007;
+  height: 60px;
+  width: 60px;
+  animation: 1s ease-in-out infinite alternate glow-big-red;
+}
+.orbs-colors-4 {
+  display: flex;
+  position: fixed;
+  gap: 300px;
+  margin-top: 20%;
+  margin-left: 60%;
+  animation: reverse-spin 30s linear infinite;
+  z-index: -2;
+}
+.orbs-colors-4 .orb {
+  border-radius: 100%;
+}
+.orbs-colors-4 :nth-child(1) {
+  background-color: #ffa90a;
+  height: 300px;
+  width: 300px;
+  animation: 1s ease-in-out infinite alternate glow-big-orj;
+}
+.orbs-colors-4 :nth-child(2) {
+  background-color: #d9ff00;
+  height: 150px;
+  width: 150px;
+  animation: 1s ease-in-out infinite alternate glow-big-yel;
 
 }
+
+
+
+
+
 
 /* .list-container {
   display: flex;
