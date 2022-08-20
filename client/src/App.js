@@ -5,6 +5,7 @@ import ListContainer from './components/ListContainer';
 import LoginForm from './components/LoginForm';
 import SignUpForm from './components/SignUpForm';
 import Orbs from './components/Orbs';
+import OrbsTwo from './components/OrbsTwo';
 
 function App() {
   const [loggedInUser, setLoggedInUser] = useState(null);
@@ -33,6 +34,7 @@ function App() {
     return (
       <>
         <Orbs />
+        <OrbsTwo />
         <LoginForm 
         onLogin={setLoggedInUser}       
         handleIsSignUpFormVisible={handleIsSignUpFormVisible}

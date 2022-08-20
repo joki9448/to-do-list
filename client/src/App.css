@@ -120,7 +120,20 @@ body {
   to {transform: rotate(360deg);
   }
 }
+@keyframes reverse-spin {
+  from {transform: rotate(360deg);
+  }
+  to {transform: rotate(0deg);
+  }
+}
 
+@keyframes glow-wte {
+  0% {box-shadow: 0px 0px 11px 2px white;}
+  25% {box-shadow: 0px 0px 12px 2.5pxwhite;}
+  50% {box-shadow: 0px 0px 13px 3px white;}
+  75% {box-shadow: 0px 0px 14px 4px white;}
+  100% {box-shadow: 0px 0px 15px 5px white;}
+}
 @keyframes glow-red {
   0% {box-shadow: 0px 0px 11px 2px #DC0007;}
   25% {box-shadow: 0px 0px 12px 2.5px#DC0007;}
@@ -163,19 +176,26 @@ body {
   75% {box-shadow: 0px 0px 14px 4px #FFFB00;}
   100% {box-shadow: 0px 0px 15px 5px #FFFB00;}
 }
+@keyframes glow-prp {
+  0% {box-shadow: 0px 0px 11px 2px #9d00ff}
+  25% {box-shadow: 0px 0px 11px 2px #9d00ff}
+  50% {box-shadow: 0px 0px 11px 2px #9d00ff}
+  75% {box-shadow: 0px 0px 11px 2px #9d00ff}
+  100% {box-shadow: 0px 0px 11px 2px #9d00ff}
+}
 
-
+/* FIRST SET OF ORBS 1111111 */
 
 .orb-colors {
   display: flex;
   position: fixed;
-  gap: 130px;
+  gap: 200px;
   margin-top: 23%;
-  margin-left: 13%;
-  animation: spin 18s linear infinite;
+  margin-left: 1%;
+  animation: spin 20s linear infinite;
   z-index: -1;
 }
-.orb {
+.orb-colors .orb {
   border-radius: 100%;
   animation: glow 5s linear infinite;
 }
@@ -238,6 +258,82 @@ body {
 
 }
 
+
+
+
+/* SECOND SET OF ORBS 2222222 */
+
+.orbs-colors-2 {
+  display: flex;
+  position: fixed;
+  gap: 125px;
+  margin-top: 21%;
+  margin-left: 16%;
+  animation: reverse-spin 15s linear infinite;
+  z-index: -1;
+}
+.orbs-colors-2 .orb {
+  border-radius: 100%;
+}
+.orbs-colors-2 :nth-child(1) {
+  background-color: #ff37ca;
+  height: 13px;
+  width: 13px;
+  box-shadow: 0px 0px 10px 2px #ff37ca;
+  animation: 1s ease-in-out infinite alternate glow-pnk;
+  
+}
+.orbs-colors-2 :nth-child(2) {
+  background-color: white;
+  height: 33px;
+  width: 33px;
+  box-shadow: 0px 0px 10px 2px white;
+  animation: 1s ease-in-out infinite alternate glow-wte;
+
+}
+.orbs-colors-2 :nth-child(3) {
+  background-color: #14DE0E;
+  height: 16px;
+  width: 16px;
+  box-shadow: 0px 0px 10px 2px #14DE0E;
+  animation: 1s ease-in-out infinite alternate glow-grn;
+
+}
+.orbs-colors-2 :nth-child(4) {
+  background-color: white;
+  height: 20px;
+  width: 20px;
+}
+.orbs-colors-2 :nth-child(5) {
+  background-color: white;
+  height: 20px;
+  width: 20px;
+}
+.orbs-colors-2 :nth-child(6) {
+  background-color: #9d00ff;
+  height: 31px;
+  width: 31px;
+  box-shadow: 0px 0px 10px 2px #9d00ff;
+  animation: 1s ease-in-out infinite alternate glow-prp;
+
+}
+.orbs-colors-2 :nth-child(7) {
+  background-color: #ffa90a;
+  height: 40px;
+  width: 40px;
+  box-shadow: 0px 0px 10px 2px #ffa90a;
+  animation: 1s ease-in-out infinite alternate glow-orj;
+
+}
+.orbs-colors-2 :nth-child(8) {
+  background-color: #DC0007;
+  height: 30px;
+  width: 30px;
+  box-shadow: 0px 0px 10px 2px #DC0007;
+  animation: 1s ease-in-out infinite alternate glow-red;
+
+}
+
 /* .list-container {
   display: flex;
   justify-content: center;
@@ -245,4 +341,3 @@ body {
   width: 75vw;
   background-color: red;
 } */
-
