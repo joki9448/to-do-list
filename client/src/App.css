@@ -53,18 +53,32 @@ body {
   height: 45px;
   width: 70px;
 }
+.login-btn:hover {
+  background-color: black;
+  color: white;
+}
+.login-btn:active {
+  font-size: 21px;
+}
 .signup-btn {
   cursor: pointer;
   background-color: black;
-  border: 1px solid black;
+  border: 2px solid black;
   color: white;
   border-radius: 100%;
   font-size: 20px;
   position: absolute;
-  margin-top: 33%;
+  margin-top: 33.75%;
   margin-left: 48.7%;
   height: 45px;
   width: 70px;
+}
+.signup-btn:hover {
+  background-color: white;
+  color: black;
+}
+.signup-btn:active {
+  font-size: 17px;
 }
 
 /* SIGNUP FORM */
@@ -127,7 +141,7 @@ body {
 
 /* Login Page Background Animation */
 
-/* @keyframes spin {
+@keyframes spin {
   from {transform: rotate(0deg);
   }
   to {transform: rotate(360deg);
@@ -230,7 +244,7 @@ body {
   50% {box-shadow: 0px 0px 12px 10px #d9ff00;}
   75% {box-shadow: 0px 0px 13px 11px #d9ff00;}
   100% {box-shadow: 0px 0px 14px 12px #d9ff00;}
-} */
+} 
 /* FIRST SET OF ORBS 1111111 */
 
 .orb-colors {

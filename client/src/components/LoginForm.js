@@ -3,6 +3,8 @@ import { useState } from 'react';
 function LoginForm({ onLogin, handleIsSignUpFormVisible }) {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
+    const [isLoginButtonHovered, setIsLoginButtonHovered] = useState(false);
+    const [isSignupButtonHovered, setIsSignupButtonHovered] = useState(false);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -46,9 +48,31 @@ function LoginForm({ onLogin, handleIsSignUpFormVisible }) {
                     value={password} 
                     placeholder="Enter password"
                 />
-                <button className="login-btn" type="submit">Login</button>
+                <button className="login-btn" 
+                        type="submit" 
+                        onMouseEnter={() => {setIsLoginButtonHovered(true)}}
+                        onMouseLeave={() => {setIsLoginButtonHovered(false)}}
+                        style={{
+                            backgroundColor: isLoginButtonHovered    ? "white" : "black",
+                            color: isLoginButtonHovered ? "black" : "white",
+                            // border: isLoginButtonHovered ? "none" : "2px solid black"
+                        }}
+                >
+                Login
+                </button>
             </form>        
-            <button className="signup-btn" onClick={() => handleIsSignUpFormVisible(true)}>Sign Up</button>
+            <button className="signup-btn" 
+                    onClick={() => handleIsSignUpFormVisible(true)}
+                    onMouseEnter={() => {setIsSignupButtonHovered(true)}}
+                    onMouseLeave={() => {setIsSignupButtonHovered(false)}}
+                    style={{
+                        backgroundColor: isSignupButtonHovered ? "white" : "black",
+                        color: isSignupButtonHovered ? "black" : "white",
+                        // border: isSignupButtonHovered ? "none" : "2px solid black"
+                    }}
+            >
+                Sign Up
+            </button>
         </>
     )
 };
