@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import ListItem from './ListItem';
 
 function ListContainer({ onLogout, loggedInUser, fetchUser }) {
-    // const [listItems, setListitems] = useState([]);
+    const [tasks, setTasks] = useState([]);
 
     const handleLogout = async () => {
         let req = await fetch('/logout', {
@@ -13,8 +13,8 @@ function ListContainer({ onLogout, loggedInUser, fetchUser }) {
     }
     return (
         <div className="list-container">
-            <h1>Hello {loggedInUser}</h1>
-            <ListItem />
+            <h1 style={{marginLeft: "88%"}}>Hello, {loggedInUser} !</h1>
+            {/* <ListItem /> */}
             <button className="logout-btn" onClick={() => handleLogout()}>Log Out</button>
         </div>
     )
