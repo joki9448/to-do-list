@@ -8,6 +8,7 @@ import Orbs from './components/Orbs';
 
 function App() {
   const [loggedInUser, setLoggedInUser] = useState(null);
+  const [loggedInUserId, setLoggedInUserId] = useState(0);
   const [isSignUpFormVisible, handleIsSignUpFormVisible] = useState(false);
 
   const fetchUser = async () => {
@@ -15,7 +16,9 @@ function App() {
       let req = await fetch('/me');
       if (req.ok) {
         let res = await req.json();
+        // console.log('res from app.js', res)
         setLoggedInUser(res.username)
+        setLoggedInUserId(res.id)
       }
     } catch (error) {
       alert(error.messages)
@@ -27,6 +30,7 @@ function App() {
     return <LandingPage 
       onLogout={setLoggedInUser} 
       loggedInUser={loggedInUser} 
+      loggedInUserId={loggedInUserId}
       fetchUser={fetchUser}
       />
   } else {

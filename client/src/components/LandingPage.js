@@ -3,7 +3,7 @@ import { useState } from 'react';
 import TaskWindow from './TaskWindow';
 import CreateTask from './CreateTask';
 
-function LandingPage({ onLogout, loggedInUser, fetchUser }) {
+function LandingPage({ onLogout, loggedInUser, loggedInUserId }) {
     const [isCreateFormVisible, setIsCreateFormVisible] = useState('');
 
     const handleLogout = async () => {
@@ -23,7 +23,13 @@ function LandingPage({ onLogout, loggedInUser, fetchUser }) {
             </button>
             <button className="logout-btn" onClick={() => handleLogout()}>Log Out</button>
             <TaskWindow />
-            {isCreateFormVisible ? <CreateTask setIsCreateFormVisible={setIsCreateFormVisible} loggedInUser={loggedInUser}/> : null}
+            {isCreateFormVisible ? 
+                <CreateTask 
+                    setIsCreateFormVisible={setIsCreateFormVisible} 
+                    loggedInUserId={loggedInUserId}
+                /> 
+                : null
+            }
         </div>
     )
 }

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-function CreateTask({ setIsCreateFormVisible, loggedInUser }) {
+function CreateTask({ setIsCreateFormVisible, loggedInUserId }) {
     const [task, setTask] = useState('');
 
     const handleSubmit = async (e) => {
@@ -11,11 +11,11 @@ function CreateTask({ setIsCreateFormVisible, loggedInUser }) {
                 header: {"Content-Type": "application/json"},
                 body: JSON.stringify({
                     "task": task,
-                    "user_id": loggedInUser.id
+                    "user_id": loggedInUserId
                 })
             })
             let res = await req.json()
-            console.log('creattask res', res)
+            console.log('create task res', res)
         } catch (error) {
             alert(error.messages)
         }
