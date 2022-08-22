@@ -2,13 +2,15 @@ import { useState } from 'react';
 
 function CreateTask({ setIsCreateFormVisible, loggedInUserId }) {
     const [task, setTask] = useState('');
+    // console.log('user id', loggedInUserId)
+    // console.log('task', task)
 
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
             let req = await fetch('/tasks', {
                 method: "POST",
-                header: {"Content-Type": "application/json"},
+                headers: {"Content-Type": "application/json"},
                 body: JSON.stringify({
                     "task": task,
                     "user_id": loggedInUserId
@@ -22,8 +24,8 @@ function CreateTask({ setIsCreateFormVisible, loggedInUserId }) {
     }
 
     return (
-        <div className="create-task-modal" onSubmit={handleSubmit}>
-            <form className="create-task-form">
+        <div className="create-task-modal">
+            <form className="create-task-form" onSubmit={handleSubmit}>
                 <input 
                     type="text" 
                     className="create-task-input"
