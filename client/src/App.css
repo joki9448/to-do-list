@@ -538,16 +538,18 @@ body {
   align-items: center;
   background-color: white;
   border: 1px solid white;
-  border-radius: 10%;
-  height: 25%;
-  margin-top: 13.8%;
+  border-radius: 20%;
+  height: 20%;
+  width: 40%;
+  margin-top: 13%;
   margin-left: 3.25%;
   padding: 6%;
 }
 .close-createtask-btn {
+  border: none;
+  background: white;
   font-size: 45px;
   position: fixed;
-  margin-right: 15.5%;
   margin-top: 14%;
   color: black;
   cursor: pointer;

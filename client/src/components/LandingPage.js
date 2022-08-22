@@ -23,7 +23,7 @@ function LandingPage({ onLogout, loggedInUser, fetchUser }) {
             </button>
             <button className="logout-btn" onClick={() => handleLogout()}>Log Out</button>
             <TaskWindow />
-            {isCreateFormVisible ? <CreateTask setIsCreateFormVisible={setIsCreateFormVisible}/> : null}
+            {isCreateFormVisible ? <CreateTask setIsCreateFormVisible={setIsCreateFormVisible} loggedInUser={loggedInUser}/> : null}
         </div>
     )
 }
