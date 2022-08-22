@@ -13,8 +13,9 @@ function ListContainer({ onLogout, loggedInUser, fetchUser }) {
     }
     return (
         <div className="list-container">
-            <h1 style={{marginLeft: "88%"}}>Hello, {loggedInUser} !</h1>
-            {/* <ListItem /> */}
+            <div className="coverup"></div>
+            <div className="coverup"></div>
+            <h1 style={{marginLeft: "83%", fontSize: '50px'}}>Hello, {loggedInUser} !</h1>
             <button className="logout-btn" onClick={() => handleLogout()}>Log Out</button>
         </div>
     )

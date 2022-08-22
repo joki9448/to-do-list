@@ -3,6 +3,7 @@
 }
 body {
   background: black;
+  margin: 0;
 }
 
 /* LOGIN FORM */
@@ -135,8 +136,6 @@ body {
   font-size: 18px;
   margin-top: 25px;
   width: 90px;
-}
-.signup-modal-btn:active {
 }
 .signup-modal-btn:hover {
   background: white;
@@ -448,8 +447,11 @@ body {
 
 }
 
+
+
 .list-container {
-  display: grid;
+  /* display: grid; */
+  position: fixed;
   height: 100vh;
   width: 100vw;
   background-color: white;
@@ -464,7 +466,6 @@ body {
   font-size: 18px;
   height: 40px;
   width: 75px;
-  margin-bottom: 40%;
+  margin-bottom: 45%;
   margin-left: 92%;
-
 }
