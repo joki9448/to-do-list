@@ -510,7 +510,7 @@ body {
 }
 
 /* TASK LIST */
-.tasklist {
+.taskwindow {
   border: 1px solid black;
   grid-column-start: 1;
   grid-row-start: 2;
