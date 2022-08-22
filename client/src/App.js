@@ -1,7 +1,7 @@
 import './App.css';
 import { useEffect, useState } from 'react';
 
-import ListContainer from './components/ListContainer';
+import LandingPage from './components/LandingPage';
 import LoginForm from './components/LoginForm';
 import SignUpForm from './components/SignUpForm';
 import Orbs from './components/Orbs';
@@ -24,7 +24,7 @@ function App() {
   useEffect(() => fetchUser, [])
 
   if (loggedInUser) {
-    return <ListContainer 
+    return <LandingPage 
       onLogout={setLoggedInUser} 
       loggedInUser={loggedInUser} 
       fetchUser={fetchUser}

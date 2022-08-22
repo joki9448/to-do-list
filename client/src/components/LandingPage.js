@@ -3,7 +3,7 @@ import { useState } from 'react';
 import TaskWindow from './TaskWindow';
 import CreateTask from './CreateTask';
 
-function ListContainer({ onLogout, loggedInUser, fetchUser }) {
+function LandingPage({ onLogout, loggedInUser, fetchUser }) {
     const [isCreateFormVisible, setIsCreateFormVisible] = useState('');
 
     const handleLogout = async () => {
@@ -28,4 +28,4 @@ function ListContainer({ onLogout, loggedInUser, fetchUser }) {
     )
 }
 
-export default ListContainer;
+export default LandingPage;
