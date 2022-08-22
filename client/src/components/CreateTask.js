@@ -1,7 +1,7 @@
 function CreateTask({ setIsCreateFormVisible}) {
-    
+
     return (
-        <div className="create-task-container">
+        <div className="create-task-modal">
             <form className="create-task-form">
                 <input type="text" className="create-task-input"></input>
                 <button type="submit">Pin New Task</button>
