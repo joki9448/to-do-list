@@ -6,17 +6,13 @@ function TaskWindow({ loggedInUserId }) {
     const [loggedInUsersTasks, setLoggedInUsersTasks] = useState([]);
     // console.log('logged in user\'s tasks:', loggedInUsersTasks)  
     const [isTaskListLoaded, setIsTaskListLoaded] = useState(true);
-
-    let tasks = loggedInUsersTasks.map((e) => {
-        return e.task;
-    })
+    
     // console.log('mapped tasks: ', tasks)
 
     const renderTasks = async () => {
         try {
             let req = await fetch('/tasks')
             let res = await req.json();
-
             const filteredTasks = res.filter((t) => {
                 return t.user_id === loggedInUserId
             })
@@ -32,8 +28,8 @@ function TaskWindow({ loggedInUserId }) {
     
     return (
         <div className="taskwindow">
-            {tasks.map((e) => {
-                return <TaskItem key={e.id} tasks={e} isTaskListLoaded={isTaskListLoaded}/>
+            {loggedInUsersTasks.map((t) => {
+                return <TaskItem key={t.id} tasks={t}/>
             })}
         </div>
     )
