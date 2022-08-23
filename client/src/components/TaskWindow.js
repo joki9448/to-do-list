@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-import ListItem from './ListItem';
+import TaskItem from './TaskItem';
 
 function TaskWindow({ loggedInUserId }) {
     const [loggedInUsersTasks, setLoggedInUsersTasks] = useState([]);
@@ -30,7 +30,7 @@ function TaskWindow({ loggedInUserId }) {
     return (
         <div className="taskwindow">
             {tasks.map((e) => {
-                return <ListItem key={e.id} tasks={e}/>
+                return <TaskItem key={e.id} tasks={e}/>
             })}
         </div>
     )

@@ -1,4 +1,4 @@
-function ListItem({ tasks }) {
+function TaskItem({ tasks }) {
     return (
         <div className="task-items-container">
             {tasks}
@@ -6,4 +6,4 @@ function ListItem({ tasks }) {
     )
 }
 
-export default ListItem;
+export default TaskItem;
