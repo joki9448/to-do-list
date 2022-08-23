@@ -1,7 +1,7 @@
-function ListItem() {
+function ListItem({ tasks }) {
     return (
-        <div>
-            List Item
+        <div className="task-items-container">
+            {tasks}
         </div>
     )
 }

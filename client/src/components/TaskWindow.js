@@ -3,19 +3,24 @@ import { useState, useEffect } from 'react';
 import ListItem from './ListItem';
 
 function TaskWindow({ loggedInUserId }) {
-    const [loggedInUsersTasks, setLoggedInUsersTasks] = useState('')
-    
+    const [loggedInUsersTasks, setLoggedInUsersTasks] = useState([]);
+    console.log('logged in user\'s tasks:', loggedInUsersTasks)  
+
+    let tasks = loggedInUsersTasks.map((e) => {
+        return e.task;
+    })
+    console.log('mapped tasks: ', tasks)
+
     const renderTasks = async () => {
         try {
             let req = await fetch('/tasks')
             let res = await req.json();
-            res.map((t) => {
-                if (t.user_id === loggedInUserId) {
-                    console.log('map t', t)
-                    // setLoggedInUsersTasks(t.task);
-                }
+
+            const filteredTasks = res.filter((t) => {
+                return t.user_id === loggedInUserId
             })
-            console.log('tasks res', res)
+            setLoggedInUsersTasks(filteredTasks)
+            // console.log(filteredTasks)
         } catch (error) {
             alert(error.messages)
         }
@@ -24,7 +29,9 @@ function TaskWindow({ loggedInUserId }) {
     
     return (
         <div className="taskwindow">
-            {loggedInUsersTasks}
+            {tasks.map((e) => {
+                return <ListItem key={e.id} tasks={e}/>
+            })}
         </div>
     )
 }
