@@ -159,7 +159,7 @@ body {
 
 /* Login Page Background Animation */
 
-@keyframes spin {
+/* @keyframes spin {
   from {transform: rotate(0deg);
   }
   to {transform: rotate(360deg);
@@ -261,7 +261,7 @@ body {
   50% {box-shadow: 0px 0px 12px 10px #d9ff00;}
   75% {box-shadow: 0px 0px 13px 11px #d9ff00;}
   100% {box-shadow: 0px 0px 14px 12px #d9ff00;}
-} 
+}  */
 
 /* FIRST SET OF ORBS 1111111 */
 
@@ -527,11 +527,13 @@ body {
   display: flex;
   position: fixed;
   justify-content: center;
-  background-color: rgba(0.8, 0.8, 0.8, 0.8);
+  background-color: rgba(0.5, 0.5, 0.5, 0.5);
+  backdrop-filter: blur(10px);
   height: 100vh;
   width: 100vw;
   bottom: 0;
   left: 0;
+  transition: all 2s ease-in;
 }
 .create-task-form {
   display: flex;

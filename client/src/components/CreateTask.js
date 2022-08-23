@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-function CreateTask({ setIsCreateFormVisible, loggedInUserId }) {
+function CreateTask({ setIsCreateFormVisible, isCreateFormVisible, loggedInUserId }) {
     const [task, setTask] = useState('');
     // console.log('user id', loggedInUserId)
     // console.log('task', task)
@@ -24,7 +24,11 @@ function CreateTask({ setIsCreateFormVisible, loggedInUserId }) {
     }
 
     return (
-        <div className="create-task-modal">
+        <div className="create-task-modal" style={{
+            visibility: isCreateFormVisible ? "visible" : "hidden",
+            opacity: isCreateFormVisible ? "1" : "0.2",
+            transition: "all 0.18s ease-in-out"
+        }}>
             <form className="create-task-form" onSubmit={handleSubmit}>
                 <textarea 
                     type="text" 
