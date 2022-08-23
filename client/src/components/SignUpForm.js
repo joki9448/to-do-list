@@ -25,7 +25,7 @@ function SignUpForm({ handleIsSignUpFormVisible, isSignUpFormVisible }) {
             }
             let res = await req.json();
         } catch (error) {
-            alert(error.messages)
+            alert('Error in SignUpForm')
         }
     };
 

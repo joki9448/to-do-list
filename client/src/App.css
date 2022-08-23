@@ -520,6 +520,16 @@ body {
   margin-left: 40%;
   height: 70vh;
   width: 80vw;
+  overflow: scroll;
+}
+
+
+@keyframes loading-tasks {
+  from {opacity: 1}
+  to {opacity: 0}
+}
+.task-items-container {
+  background-color: lightgrey;
 }
 
 /* CREATE TASK FORM */
@@ -533,7 +543,6 @@ body {
   width: 100vw;
   bottom: 0;
   left: 0;
-  transition: all 2s ease-in;
 }
 .create-task-form {
   display: flex;
@@ -541,24 +550,39 @@ body {
   justify-content: center;
   align-items: center;
   background-color: white;
-  border: 1px solid white;
-  height: 20%;
-  width: 40%;
-  margin-top: 13%;
-  margin-left: 3.25%;
+  height: 50%;
+  width: 50%;
+  margin-top: 8%;
   padding: 6%;
 }
 .create-task-input {
-  height: 100%;
+  text-align: center;
+  background: lightgrey;
+  position: relative;
+  font-size: 30px;
+  height: 15%;
   width: 100%;
+  transition: height .35s ease-in-out;
+}
+.create-task-input:focus {
+  text-align: left;
+  height: 120%;
+}
+.create-task-input:focus::placeholder {
+  color: transparent;
+}
+.create-task-form :nth-child(2) {
+  position: relative;
+  margin-top: 25px;
+  font-size: 25px;
 }
 .close-createtask-btn {
   border: none;
   background: white;
-  font-size: 45px;
+  font-size: 50px;
   position: fixed;
-  margin-top: 14%;
-  margin-right: 44%;
+  margin-top: 9%;
+  margin-right: 55%;
   color: black;
   cursor: pointer;
   text-decoration: none;

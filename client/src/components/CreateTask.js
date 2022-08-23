@@ -17,9 +17,9 @@ function CreateTask({ setIsCreateFormVisible, isCreateFormVisible, loggedInUserI
                 })
             })
             let res = await req.json()
-            console.log('create task res', res)
+            // console.log('create task res', res)
         } catch (error) {
-            alert(error.messages)
+            alert('Error in CreateTask')
         }
     }
 
@@ -30,15 +30,16 @@ function CreateTask({ setIsCreateFormVisible, isCreateFormVisible, loggedInUserI
             transition: "all 0.18s ease-in-out"
         }}>
             <form className="create-task-form" onSubmit={handleSubmit}>
-                <textarea 
+                <input 
                     type="text" 
                     rows="6"
                     className="create-task-input"
+                    placeholder="What to do?"
                     value={task}
                     onChange={(e) => {
                         setTask(e.target.value)
                     }}
-                ></textarea>
+                ></input>
                 <button type="submit">Pin New Task</button>
             </form>
             <button className="close-createtask-btn" onClick={() => {
