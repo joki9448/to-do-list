@@ -26,14 +26,15 @@ function CreateTask({ setIsCreateFormVisible, loggedInUserId }) {
     return (
         <div className="create-task-modal">
             <form className="create-task-form" onSubmit={handleSubmit}>
-                <input 
+                <textarea 
                     type="text" 
+                    rows="6"
                     className="create-task-input"
                     value={task}
                     onChange={(e) => {
                         setTask(e.target.value)
                     }}
-                ></input>
+                ></textarea>
                 <button type="submit">Pin New Task</button>
             </form>
             <button className="close-createtask-btn" onClick={() => {
