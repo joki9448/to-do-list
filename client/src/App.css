@@ -532,11 +532,11 @@ body {
   border: 1px solid black;
 }
 .task-text{
-  grid-column-start: 2;
+  grid-column-start: 1;
   grid-column-end: 5;
   grid-row-start: 1;
-  text-align: center;
   font-size: 60px;
+  padding: 10px;
 }
 
 .task-delete-btn{

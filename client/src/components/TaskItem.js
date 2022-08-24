@@ -16,10 +16,11 @@ function TaskItem({ tasks, isTaskListLoaded }) {
     }
 
     return (
-        <div className="task-items-container">
-            <div className="task-text" 
+        <div className="task-items-container" 
                 onMouseEnter={() => setIsTaskHovered(true)}
                 onMouseLeave={() => setIsTaskHovered(false)}
+        >       
+            <div className="task-text" 
             >{tasks.task}
             </div>
             <button className="task-delete-btn" 
