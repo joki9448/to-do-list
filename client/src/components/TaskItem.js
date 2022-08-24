@@ -1,4 +1,7 @@
+import { useState } from 'react';
+
 function TaskItem({ tasks, isTaskListLoaded }) {
+    const [isTaskHovered, setIsTaskHovered] = useState(false);
     // console.log('tasks after being mapped into individual components', tasks)
     // console.log(task)
 
@@ -14,8 +17,18 @@ function TaskItem({ tasks, isTaskListLoaded }) {
 
     return (
         <div className="task-items-container">
-            {tasks.task}
-            <button className="task-delete-btn" onClick={() => {handleDelete(tasks)}}>x</button>
+            <div className="task-text" 
+                onMouseEnter={() => setIsTaskHovered(true)}
+                onMouseLeave={() => setIsTaskHovered(false)}
+            >{tasks.task}
+            </div>
+            <button className="task-delete-btn" 
+                    onClick={() => {handleDelete(tasks)}}
+                    style={{
+                        visibility: isTaskHovered ? "visible" : "hidden"
+                    }}
+            >x
+            </button>
         </div>
     )
 }

@@ -523,13 +523,24 @@ body {
   overflow: scroll;
 }
 
-
-@keyframes loading-tasks {
-  from {opacity: 1}
-  to {opacity: 0}
-}
+/* INDIVIDUAL TASK */
 .task-items-container {
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  grid-template-rows: repeat(5, 20%);
   background-color: lightgrey;
+  border: 1px solid black;
+}
+.task-text{
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  text-align: center;
+  font-size: 60px;
+}
+
+.task-delete-btn{
+
 }
 
 /* CREATE TASK FORM */
