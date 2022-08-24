@@ -17,6 +17,7 @@ function CreateTask({ setIsCreateFormVisible, isCreateFormVisible, loggedInUserI
                 })
             })
             let res = await req.json()
+            // if (req.status === 201) setIsCreateFormVisible(false)
             // console.log('create task res', res)
         } catch (error) {
             alert('Error in CreateTask')

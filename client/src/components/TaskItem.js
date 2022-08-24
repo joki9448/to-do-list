@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-function TaskItem({ tasks, isTaskListLoaded }) {
+function TaskItem({ tasks }) {
     const [isTaskHovered, setIsTaskHovered] = useState(false);
     // console.log('tasks after being mapped into individual components', tasks)
     // console.log(task)

@@ -24,14 +24,14 @@ function App() {
       alert(error.messages)
     }
   }
-  useEffect(() => fetchUser, [])
-
+  useEffect(() => fetchUser, [loggedInUser])
+  
   if (loggedInUser) {
     return <LandingPage 
       onLogout={setLoggedInUser} 
-      loggedInUser={loggedInUser} 
+      loggedInUsername={loggedInUser} 
       loggedInUserId={loggedInUserId}
-      fetchUser={fetchUser}
+
       />
   } else {
     return (
