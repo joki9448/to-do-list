@@ -493,6 +493,10 @@ body {
   width: 75px;
   font-weight: bold;
 }
+.logout-btn:hover {
+  background: white;
+  color: black;
+}
 .create-btn {
   cursor: pointer;
   grid-column-start: 4;
@@ -506,6 +510,10 @@ body {
   background: green;
   color: white;
   font-weight: bold;
+}
+.create-btn:hover {
+  background: white;
+  color: black;
 }
 .create-btn:active {
   font-size: 26px;
@@ -528,8 +536,6 @@ body {
   display: grid;
   grid-template-columns: repeat(5, 20%);
   grid-template-rows: repeat(5, 20%);
-  background-color: lightgrey;
-  border: 1px solid black;
 }
 .task-text{
   grid-column-start: 1;
@@ -598,3 +604,4 @@ body {
   cursor: pointer;
   text-decoration: none;
 }
+

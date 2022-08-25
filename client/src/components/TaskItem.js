@@ -11,7 +11,6 @@ function TaskItem({ tasks, handleRefresh }) {
                 method: "DELETE"
             })
             if (req.ok) handleRefresh();
-            console.log('req in taskitem', req)
         } catch(error) {
             console.log(error.message)
         }
