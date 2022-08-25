@@ -605,3 +605,6 @@ body {
   text-decoration: none;
 }
 
+.close-createtask-btn:active {
+  font-size: 45px;
+}
