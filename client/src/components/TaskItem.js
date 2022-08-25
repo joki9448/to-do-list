@@ -1,6 +1,7 @@
 import { useState } from 'react';
 
 function TaskItem({ tasks, handleRefresh }) {
+    console.log('tasks', tasks)
     const [isTaskHovered, setIsTaskHovered] = useState(false);
     // console.log('tasks after being mapped into individual components', tasks)
     // console.log(task)
@@ -22,7 +23,7 @@ function TaskItem({ tasks, handleRefresh }) {
                 onMouseLeave={() => setIsTaskHovered(false)}
         >       
             <div className="task-text" 
-            >{tasks.task}
+            >{tasks.task} {tasks.created_at}
             </div>
             <button className="task-delete-btn" 
                     onClick={() => {handleDelete(tasks)}}
