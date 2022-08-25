@@ -12,7 +12,7 @@ class TasksController < ApplicationController
 
     def create
         task = Task.create!(new_task_params)
-        render json: task, status: 201;
+        render json: task, status: 201
     end
 
     def destroy

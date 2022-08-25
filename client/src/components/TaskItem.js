@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-function TaskItem({ tasks }) {
+function TaskItem({ tasks, handleRefresh }) {
     const [isTaskHovered, setIsTaskHovered] = useState(false);
     // console.log('tasks after being mapped into individual components', tasks)
     // console.log(task)
@@ -10,6 +10,8 @@ function TaskItem({ tasks }) {
             let req = await fetch(`/tasks/${t.id}`, {
                 method: "DELETE"
             })
+            if (req.ok) handleRefresh();
+            console.log('req in taskitem', req)
         } catch(error) {
             console.log(error.message)
         }

@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 
 import TaskItem from './TaskItem';
 
-function TaskWindow({ loggedInUsersTasks }) {
+function TaskWindow({ loggedInUsersTasks, handleRefresh }) {
     // console.log('loggedinuserid: ', loggedInUserId)
     // const [loggedInUsersTasks, setLoggedInUsersTasks] = useState([]);
     // console.log('logged in user\'s tasks:', loggedInUsersTasks)  
@@ -28,7 +28,7 @@ function TaskWindow({ loggedInUsersTasks }) {
     return (
         <div className="taskwindow">
             {loggedInUsersTasks.map((t) => {
-                return <TaskItem key={t.id} tasks={t} />
+                return <TaskItem key={t.id} tasks={t} handleRefresh={handleRefresh}/>
             })}
         </div>
     )

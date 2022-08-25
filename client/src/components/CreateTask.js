@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-function CreateTask({ setIsCreateFormVisible, isCreateFormVisible, loggedInUserId }) {
+function CreateTask({ setIsCreateFormVisible, isCreateFormVisible, loggedInUserId, handleRefresh }) {
     const [task, setTask] = useState('');
     // console.log('user id', loggedInUserId)
     // console.log('task', task)
@@ -17,7 +17,12 @@ function CreateTask({ setIsCreateFormVisible, isCreateFormVisible, loggedInUserI
                 })
             })
             let res = await req.json()
-            // if (req.status === 201) setIsCreateFormVisible(false)
+            if (req.ok) {
+                setIsCreateFormVisible(false);
+                setTimeout(() => {
+                    handleRefresh();
+                }, 400)
+            }
             // console.log('create task res', res)
         } catch (error) {
             alert('Error in CreateTask')

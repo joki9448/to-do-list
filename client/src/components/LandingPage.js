@@ -23,6 +23,9 @@ function LandingPage({ onLogout, loggedInUsername, loggedInUserId }) {
     }
     useEffect(() => {renderTasks()}, [loggedInUserId])
 
+    const handleRefresh = () => {
+        window.location.reload();
+    }
 
     const handleLogout = async () => {
         let req = await fetch('/logout', {
@@ -40,19 +43,17 @@ function LandingPage({ onLogout, loggedInUsername, loggedInUserId }) {
                 New
             </button>
             <button className="logout-btn" onClick={() => handleLogout()}>Log Out</button>
-            <TaskWindow loggedInUserId={loggedInUserId} loggedInUsersTasks={loggedInUsersTasks}/>
+            <TaskWindow 
+                loggedInUserId={loggedInUserId} 
+                loggedInUsersTasks={loggedInUsersTasks} 
+                handleRefresh={handleRefresh}
+            />
             <CreateTask 
                 setIsCreateFormVisible={setIsCreateFormVisible} 
                 isCreateFormVisible={isCreateFormVisible}
                 loggedInUserId={loggedInUserId} 
+                handleRefresh={handleRefresh}
             />
-            {/* {isCreateFormVisible ? 
-                <CreateTask 
-                    setIsCreateFormVisible={setIsCreateFormVisible} 
-                    loggedInUserId={loggedInUserId}
-                /> 
-                : null
-            } */}
         </div>
     )
 }
