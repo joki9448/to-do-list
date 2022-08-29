@@ -452,27 +452,26 @@ body {
 /* LANDING PAGE */
 .list-container {
   display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: 25% 25% 25% 25%;
+  grid-template-columns: repeat(5, 20%);
+  grid-template-rows: repeat(5, 20%);
   position: fixed;
   height: 100vh;
   width: 100vw;
   background-color: white;
 }
 .list-container h1 {
-  grid-column-start: 4;
-  grid-row-start: 1;
-  margin-top: 10%;
-  margin-left: 5%;
-  font-size: 50px;
+  display: flex;
+  position: absolute;
+  margin-left: 78%;
+  font-size: 40px;
 }
 .list-container h2 {
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 2;
-  margin-top: 5%;
-  margin-left: 15%;
+  margin-top: 1%;
+  margin-left: 25%;
   position: absolute;
   font-size: 125px;
   width: 400px;
@@ -480,9 +479,10 @@ body {
 }
 .logout-btn {
   grid-column-start: 4;
+  grid-column-end: 5;
   grid-row-start: 1;
-  margin-left: 40%;
-  margin-top: 30%;
+  margin-left: 125%;
+  margin-top: 28%;
   cursor: pointer;
   border-radius: 15%;
   background: black;
@@ -502,8 +502,8 @@ body {
   grid-row-start: 1;
   border-radius: 15%;
   font-size: 30px;
-  margin-top: 30%;
-  margin-left: 10%;
+  margin-top: 28%;
+  margin-left: 90%;
   height: 40px;
   width: 75px;
   background: green;
@@ -520,11 +520,11 @@ body {
 
 /* TASK LIST */
 .taskwindow {
-  /* border: 1px solid black; */
   grid-column-start: 1;
-  grid-row-start: 2;
+  grid-row-start: 1;
   grid-row-end: 4;
-  margin-left: 40%;
+  margin-top: 50%;
+  margin-left: 50%;
   height: 80vh;
   width: 80vw;
   overflow: scroll;
@@ -539,16 +539,28 @@ body {
 }
 .task-text{
   grid-column-start: 1;
-  grid-column-end: 5;
+  grid-column-end: 4;
   grid-row-start: 1;
-  margin-top: 1%;
+  margin-top: 4%;
   margin-left: 5%;
   font-size: 60px;
   padding: 10px;
 }
+.created-at-text {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  margin-top: 25%;
+  font-size: 30px;
+}
 
 .task-delete-btn{
+  grid-column-start: 5;
+  width: 50px;
+  height: 50px;
   background: red;
+  margin-top: 15%;
+  margin-left: 60%;
 }
 
 /* CREATE TASK FORM */
