@@ -3,21 +3,17 @@ import { useState } from 'react';
 function TaskItem({ tasks, handleRefresh }) {
     const [isTaskHovered, setIsTaskHovered] = useState(false);
     
-
     let date;
     let time;
     const handleDate = () => {
-        let createdAt = tasks.created_at
-        let noTime = createdAt.slice(0, 10)
-        let slicedYear = noTime.slice(0, 4)
-        let firstDash = createdAt.charAt(4)
-        let finalDate = noTime.replace(slicedYear, '').replace(firstDash, '') + '-' + slicedYear
-        return finalDate
+        let date = tasks.created_at;
+        let newDate = new Date(date)
+        return newDate.toLocaleDateString() + ' ' + newDate.toLocaleTimeString();
     }
     const handleTime = () => {
         let createdAt = tasks.created_at
-        let newTime = createdAt.slice(10)
-        return time = newTime;
+        let noYear = createdAt.slice(10)
+
     }
 
     const handleDelete = async (t) => {
@@ -36,10 +32,8 @@ function TaskItem({ tasks, handleRefresh }) {
                 onMouseEnter={() => setIsTaskHovered(true)}
                 onMouseLeave={() => setIsTaskHovered(false)}
         >       
-            <div className="task-text" 
-            >
-                {tasks.task} {handleDate()} {handleTime()}
-            </div>
+            <div className="task-text">{tasks.task}</div>
+            <div className="created-at-text">{handleDate()}</div>
             <button className="task-delete-btn" 
                     onClick={() => {handleDelete(tasks)}}
                     style={{
