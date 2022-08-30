@@ -545,16 +545,27 @@ body {
   margin-left: 5%;
   font-size: 60px;
   padding: 10px;
+  background-image: linear-gradient(white, green);
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  transition: .3s;
+}
+.task-text:hover {
+  background-size: 100% 100%;
+  /* opacity: 1; */
+  box-shadow: 10px 10px 10px 10px purple;
 }
 .created-at-text {
   grid-column-start: 4;
   grid-column-end: 5;
   grid-row-start: 1;
   margin-top: 25%;
+  margin-left: 5%;
   font-size: 30px;
 }
 
 .task-delete-btn{
+  font-size: 50px;
   grid-column-start: 5;
   width: 50px;
   height: 50px;
