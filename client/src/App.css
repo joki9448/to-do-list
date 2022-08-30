@@ -457,7 +457,8 @@ body {
   position: fixed;
   height: 100vh;
   width: 100vw;
-  background: linear-gradient(rgb(222, 221, 221), white, rgb(236, 236, 236));
+  background: white;
+  /* background: linear-gradient(rgb(222, 221, 221), white, rgb(236, 236, 236)); */
 }
 .list-container h1 {
   display: flex;
@@ -552,10 +553,18 @@ body {
   grid-column-end: 4;
   grid-row-start: 1;
   margin-top: 4%;
-  margin-left: 5%;
+  margin-left: 10%;
+  margin-bottom: 4%;
   font-size: 60px;
   padding: 10px;
 }
+.dot {
+  grid-column-start: 1;
+  grid-row-start: 3;
+  font-size: 15px;
+  margin-left: 15%;
+}
+
 .created-at-text {
   grid-column-start: 4;
   grid-column-end: 5;
@@ -566,13 +575,16 @@ body {
 }
 
 .task-delete-btn{
-  font-size: 50px;
+  cursor: pointer;
+  border: none;
+  border-radius: 100%;
   grid-column-start: 5;
   width: 50px;
   height: 50px;
-  background: red;
-  margin-top: 15%;
+  background: rgb(226, 0, 0);
+  margin-top: 18%;
   margin-left: 60%;
+  box-shadow: 0px 0px 2px 2px rgb(255, 94, 94);
 }
 
 /* CREATE TASK FORM */

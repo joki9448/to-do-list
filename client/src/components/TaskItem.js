@@ -25,12 +25,15 @@ function TaskItem({ tasks, handleRefresh }) {
                 onMouseEnter={() => setIsTaskHovered(true)}
                 onMouseLeave={() => setIsTaskHovered(false)}
         >       
+            <div className="dot">●</div>
             <div className="task-text">{tasks.task}</div>
             <div className="created-at-text">{handleDateAndTime()}</div>
             <button className="task-delete-btn" 
                     onClick={() => {handleDelete(tasks)}}
                     style={{
-                        visibility: isTaskHovered ? "visible" : "hidden"
+                        visibility: isTaskHovered ? "visible" : "hidden",
+                        color: 'white',
+                        fontSize: '50px',
                     }}
             >x
             </button>
