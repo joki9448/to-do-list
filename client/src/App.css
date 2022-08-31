@@ -542,6 +542,7 @@ body {
   background-size: 0 100%;
   background-repeat: no-repeat;
   transition: .3s;
+  padding-bottom: 3%;
 }
 .task-items-container:hover {
   background-size: 100% 100%;
@@ -554,27 +555,30 @@ body {
   grid-row-start: 1;
   margin-top: 4%;
   margin-left: 10%;
-  margin-bottom: 4%;
+  /* margin-bottom: 4%; */
   font-size: 60px;
   padding: 10px;
 }
-.dot {
+/* .dot {
   grid-column-start: 1;
-  grid-row-start: 3;
+  grid-row-start: 2;
   font-size: 15px;
+  margin-top: 15px;
   margin-left: 15%;
-}
+} */
 
 .created-at-text {
   grid-column-start: 4;
   grid-column-end: 5;
   grid-row-start: 1;
   margin-top: 25%;
-  margin-left: 5%;
   font-size: 30px;
 }
 
 .task-delete-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
   border: none;
   border-radius: 100%;
@@ -586,6 +590,7 @@ body {
   margin-left: 60%;
   box-shadow: 0px 0px 2px 2px rgb(255, 94, 94);
 }
+
 
 /* CREATE TASK FORM */
 .create-task-modal {
