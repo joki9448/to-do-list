@@ -35,6 +35,9 @@ function TaskItem({ tasks, handleRefresh }) {
                         visibility: isTaskHovered ? "visible" : "hidden",
                         color: 'white',
                         fontSize: '50px',
+                        opacity: isTaskHovered ? "1" : "0.2",
+                        transition: "all 0.18s ease-in-out"
+            
                     }}
             >x
             </button>

@@ -590,6 +590,14 @@ body {
   margin-left: 60%;
   box-shadow: 0px 0px 2px 2px rgb(255, 94, 94);
 }
+.task-delete-btn:hover {
+  background: rgb(255, 94, 94);
+}
+.task-delete-btn:active {
+  font-size: 26px;
+  border: 6px solid white;
+}
+
 
 
 /* CREATE TASK FORM */
