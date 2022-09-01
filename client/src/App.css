@@ -460,6 +460,7 @@ body {
   background: white;
   /* background: linear-gradient(rgb(222, 221, 221), white, rgb(236, 236, 236)); */
 }
+/* greeting header */
 .list-container h1 {
   display: flex;
   position: absolute;
@@ -467,6 +468,7 @@ body {
   font-size: 40px;
   color: black;
 }
+/* general header */
 .list-container h2 {
   grid-column-start: 1;
   grid-column-end: 3;
@@ -636,10 +638,12 @@ body {
 .create-task-input:focus {
   text-align: left;
   height: 120%;
+  padding-left: 50px;
 }
 .create-task-input:focus::placeholder {
   color: transparent;
 }
+/* Submit New Task Button */
 .create-task-form :nth-child(2) {
   position: relative;
   margin-top: 25px;
@@ -650,7 +654,7 @@ body {
   background: white;
   font-size: 50px;
   position: fixed;
-  margin-top: 8%;
+  margin-top: 9%;
   margin-right: 55%;
   color: black;
   cursor: pointer;
