@@ -46,7 +46,7 @@ function CreateTask({ setIsCreateFormVisible, isCreateFormVisible, loggedInUserI
                         setTask(e.target.value)
                     }}
                 ></input>
-                <button type="submit">Pin New Task</button>
+                <button type="submit">Post</button>
             </form>
             <button className="close-createtask-btn" onClick={() => {
                 setIsCreateFormVisible(false);
