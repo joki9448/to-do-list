@@ -627,6 +627,7 @@ body {
   padding: 6%;
 }
 .create-task-input {
+  border: 3px double black;
   resize: none;
   text-align: center;
   background: linear-gradient(to bottom, lightgrey, white);
