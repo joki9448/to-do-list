@@ -648,6 +648,7 @@ body {
   padding-right: 25px;
   padding-bottom: 200px;
   font-size: 60px;
+  outline: none;
 }
 .create-task-input:focus::placeholder {
   color: transparent;
