@@ -36,7 +36,7 @@ function CreateTask({ setIsCreateFormVisible, isCreateFormVisible, loggedInUserI
             transition: "all 0.18s ease-in-out"
         }}>
             <form className="create-task-form" onSubmit={handleSubmit}>
-                <input 
+                <textarea 
                     type="text" 
                     rows="6"
                     className="create-task-input"
@@ -45,7 +45,7 @@ function CreateTask({ setIsCreateFormVisible, isCreateFormVisible, loggedInUserI
                     onChange={(e) => {
                         setTask(e.target.value)
                     }}
-                ></input>
+                ></textarea>
                 <button type="submit">Post</button>
             </form>
             <button className="close-createtask-btn" onClick={() => {

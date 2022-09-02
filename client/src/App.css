@@ -633,6 +633,7 @@ body {
   font-size: 30px;
   height: 15%;
   width: 100%;
+  padding-top: 25px;
   transition: height .35s ease-in-out;
 }
 .create-task-input:focus {
@@ -643,6 +644,7 @@ body {
   height: 80%;
   margin-top: 5%;
   padding-left: 50px;
+  padding-right: 50px;
   padding-bottom: 200px;
   font-size: 60px;
 }
