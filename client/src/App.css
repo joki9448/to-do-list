@@ -487,7 +487,7 @@ body {
   grid-row-start: 1;
   margin-left: 125%;
   margin-top: 28%;
-  cursor: pointer;
+  cursor: alias;
   border-radius: 15%;
   background: black;
   color: white;
@@ -552,6 +552,7 @@ body {
 }
 
 .task-text{
+  cursor: default;
   grid-column-start: 1;
   grid-column-end: 4;
   grid-row-start: 1;
@@ -560,6 +561,11 @@ body {
   /* margin-bottom: 4%; */
   font-size: 50px;
   padding: 10px;
+  transition: all 0.08s ease-in;
+}
+.task-text:hover {
+  color: white;
+  text-shadow: 0px 0px 5px black;
 }
 
 /* .dot {
