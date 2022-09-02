@@ -627,6 +627,7 @@ body {
   padding: 6%;
 }
 .create-task-input {
+  resize: none;
   text-align: center;
   background: lightgrey;
   position: relative;
@@ -642,9 +643,9 @@ body {
   flex-wrap: wrap;
   text-align: left;
   height: 80%;
-  margin-top: 5%;
-  padding-left: 50px;
-  padding-right: 50px;
+  margin-top: 8%;
+  padding-left: 25px;
+  padding-right: 25px;
   padding-bottom: 200px;
   font-size: 60px;
 }
@@ -657,7 +658,7 @@ body {
   display: flex;
   border-radius: 100%; 
   position: absolute;
-  margin-bottom: 30%;
+  margin-bottom: 32%;
   margin-left: 50%;
   /* margin-top: 25px; */
   font-size: 25px;
