@@ -577,11 +577,16 @@ body {
 } */
 
 .created-at-text {
+  cursor: default;
   grid-column-start: 4;
   grid-column-end: 5;
   grid-row-start: 1;
   margin-top: 25%;
   font-size: 30px;
+}
+.created-at-text:hover {
+  color: white;
+  text-shadow: 0px 0px 5px black;
 }
 
 .task-delete-btn{
