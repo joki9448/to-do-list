@@ -629,7 +629,7 @@ body {
 .create-task-input {
   resize: none;
   text-align: center;
-  background: lightgrey;
+  background: linear-gradient(to bottom, lightgrey, white);
   position: relative;
   font-size: 30px;
   height: 15%;
