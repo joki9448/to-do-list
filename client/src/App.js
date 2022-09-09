@@ -24,7 +24,7 @@ function App() {
       alert(error.messages)
     }
   }
-  useEffect(() => fetchUser, [])
+  useEffect(() => fetchUser, [loggedInUser])
   
   if (loggedInUser) {
     return <LandingPage 
