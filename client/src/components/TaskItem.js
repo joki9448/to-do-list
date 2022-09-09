@@ -14,7 +14,7 @@ function TaskItem({ tasks, handleRefresh }) {
             let req = await fetch(`/tasks/${t.id}`, {
                 method: "DELETE"
             })
-            if (req.ok) handleRefresh();
+            // if (req.ok) handleRefresh();
         } catch(error) {
             console.log(error.message)
         }

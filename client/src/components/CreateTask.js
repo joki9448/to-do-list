@@ -19,9 +19,9 @@ function CreateTask({ setIsCreateFormVisible, isCreateFormVisible, loggedInUserI
             let res = await req.json()
             if (req.ok) {
                 setIsCreateFormVisible(false);
-                setTimeout(() => {
-                    handleRefresh();
-                }, 400)
+                // setTimeout(() => {
+                //     handleRefresh();
+                // }, 400)
             }
             // console.log('create task res', res)
         } catch (error) {
