@@ -21,7 +21,7 @@ function LandingPage({ onLogout, loggedInUsername, loggedInUserId }) {
             console.log('Error in TaskWindow')
         }
     }
-    useEffect(() => {renderTasks()}, [loggedInUserId])
+    useEffect(() => {renderTasks()}, [])
 
     const handleRefresh = () => {
         window.location.reload();
