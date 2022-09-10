@@ -68,8 +68,10 @@ body {
   border-radius: 100%;
   font-size: 20px;
   position: absolute;
-  margin-top: 33.75%;
-  margin-left: 48.7%;
+  margin-top: 61vh;
+  margin-left: 48.75vw;
+  /* margin-top: 33.75%;
+  margin-left: 48.7%; */
   height: 45px;
   width: 70px;
 }

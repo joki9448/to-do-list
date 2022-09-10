@@ -33,7 +33,7 @@ function LoginForm({ onLogin, handleIsSignUpFormVisible }) {
     }
 
     return (
-        <>
+        <div className="login-form-container">
             <form className="login-form" onSubmit={handleSubmit}>
                 <h1 className="login-header">LOGIN</h1>
                 <input 
@@ -73,7 +73,7 @@ function LoginForm({ onLogin, handleIsSignUpFormVisible }) {
             >
                 Sign Up
             </button>
-        </>
+        </div>
     )
 };
 
