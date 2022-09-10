@@ -103,8 +103,9 @@ body {
   border-radius: 10%;
   height: 26%;
   margin-top: 13%;
+  position: fixed;
   /* margin-left: 2.5%; */
-  padding: 6%;
+  padding: 5.5%;
   /* padding-left: 3%;
   padding-right: 3%; */
 }
