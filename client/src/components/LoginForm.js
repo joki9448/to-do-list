@@ -60,19 +60,20 @@ function LoginForm({ onLogin, handleIsSignUpFormVisible }) {
                 >
                 Login
                 </button>
+                <button className="signup-btn" 
+                        type="button"
+                        onClick={() => handleIsSignUpFormVisible(true)}
+                        onMouseEnter={() => {setIsSignupButtonHovered(true)}}
+                        onMouseLeave={() => {setIsSignupButtonHovered(false)}}
+                        style={{
+                            backgroundColor: isSignupButtonHovered ? "white" : "black",
+                            color: isSignupButtonHovered ? "black" : "white",
+                            // border: isSignupButtonHovered ? "none" : "2px solid black"
+                        }}
+                >
+                    Sign Up
+                </button>
             </form>        
-            <button className="signup-btn" 
-                    onClick={() => handleIsSignUpFormVisible(true)}
-                    onMouseEnter={() => {setIsSignupButtonHovered(true)}}
-                    onMouseLeave={() => {setIsSignupButtonHovered(false)}}
-                    style={{
-                        backgroundColor: isSignupButtonHovered ? "white" : "black",
-                        color: isSignupButtonHovered ? "black" : "white",
-                        // border: isSignupButtonHovered ? "none" : "2px solid black"
-                    }}
-            >
-                Sign Up
-            </button>
         </div>
     )
 };
