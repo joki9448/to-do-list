@@ -31,7 +31,6 @@ function App() {
       onLogout={setLoggedInUser} 
       loggedInUsername={loggedInUser} 
       loggedInUserId={loggedInUserId}
-
       />
   } else {
     return (
